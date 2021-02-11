@@ -1,4 +1,16 @@
-/* To be used in conjunction with Zendesk Dark https://chrome.google.com/webstore/detail/zendesk-dark-mode-theme/ndneacmpkcghablknbeiiopilgeomhon?hl=en */
+/* ==UserStyle==
+@name Zendesk Dojo
+@namespace github.com/pekempy/CSSTweaks
+@homepageURL https://github.com/pekempy/CSSTweaks/Zendesk-Dojo.user.css
+@version 0.1
+@updateURL https://raw.githubusercontent.com/pekempy/CSSTweaks/main/Zendesk-Dojo.user.css
+@description Zendesk dojo theme to be used with Zendesk Dark extension
+@author Pekempy
+@license GNU-V3.0
+
+To be used in conjunction with Zendesk Dark 
+https://chrome.google.com/webstore/detail/zendesk-dark-mode-theme/ndneacmpkcghablknbeiiopilgeomhon?hl=en 
+*/
 
 /* DM Sans site-wide */
     body, input, textarea, h1, h2, h3, h4, h5, h6, address, label, select, button {
