@@ -17,7 +17,7 @@
     }
 /* Change navigation colours */
     nav[id="main_navigation"], .ember-view-filters, #main_navigation {
-        background-color:#3369e8 !important;   
+        background-color:#93edd2 !important;   
     }
     #main_navigation .toolbar_link.active-product-link {
         background-color:#80d0b8 !important;
