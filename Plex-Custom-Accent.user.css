@@ -1,0 +1,188 @@
+/* ==UserStyle==
+@name Plex custom accent colour
+@namespace github.com/pekempy/CSSTweaks
+@updateURL https://raw.githubusercontent.com/pekempy/CSSTweaks/main/Plex-Custom-Accent.user.css
+@version 0.0.1
+@license GPL v3
+@author Pekempy
+==/UserStyle== */
+
+@-moz-document domain("app.plex.tv") {
+	@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+	/* Changing the "--accent-colour" here willlet you choose the accent colour used almost everywhere in Plex Web UI If you choose too bright of colour, you will miss some labels :( */
+	:root {
+		--accent-colour: #31d0f7;
+		--accent-rgb: 49, 208, 247
+	}
+	.artwork-file-container a,
+	.artwork-file-container a:hover,
+	.btn-gray.selected,
+	.cancel-url-btn,
+	.card-announcement a,
+	.conversion-queue-empty-region a,
+	.edit-section-modal .wizard-blocks-group>.wizard-block.selected,
+	.edit-section-modal .wizard-blocks-group>.wizard-block.selected:hover,
+	.help-block a,
+	.nav-pills>li.active>a,
+	.remote-access-upload-form .remote-access-upload-speed-header,
+	.status-conversion-btn,
+	.submit-url-btn,
+	.upload-back-btn,
+	.upload-url-btn,
+	.upload-url-btn:hover,
+	.wizard-block .selected,
+	.wizard-block-selected,
+	a[class*=Link-isSelected-],
+	a[class*=Link-primary-],
+	a[class*=PageHeaderTabButton-isSelected-],
+	button[class*=IconButton-]:hover,
+	button[class*=IconButton-isActive-],
+	button[class*=Link-isSelected-],
+	button[class*=Link-primary-],
+	div[class*=MultiSelectPageHeader-selectedTitle-],
+	div[class*=PageHeaderMultiselectActions-count],
+	div[class*=ServerSettingsServerMenuItem-friendlyName],
+	div[class*=SidebarListLink-selectedIcon-],
+	div[class*=SourceSidebarServerHeader-title-],
+	span[class*=NavBarActivityMenuStatusItem-statusButtonIndicator-],
+	svg[id*=plex-icon-selected] {
+		color: var(--accent-colour)
+	}
+	.badge,
+	.keyboard-shortcuts-keys-key,
+	a[class*=" active"],
+	a[class*=check-for-updates-btn],
+	button[class*=Button-primary],
+	div[class*=MetadataPosterCard-progressBar-],
+	div[class*=PosterCardOverlayProgress-progressBar-],
+	div[class*=SessionTile-playProgressPercent-],
+	div[class*=VolumeSlider-fill-] {
+		background-color: var(--accent-colour)!important
+	}
+	p {
+		margin: 0!important
+	}
+	div[class*=PageHeaderMultiselectActions-container-] {
+		border: 2px solid var(--accent-colour)
+	}
+	button[class*=PosterCardLink-hoveredLink],
+	div[class*=MetadataPosterCardFace-face-]:hover {
+		box-shadow: 0 0 0 1px var(--accent-colour), 0 0 4px rgba(0, 0, 0, .3)
+	}
+	.btn,
+	div[class*=MetadataPosterCard-legacyUnwatchedEpisodesBadge-],
+	div[class*=MetadataPosterCardOverlay-unplayedBadge-] {
+		background-color: var(--accent-colour)!important;
+		color: #fff
+	}
+	div[class*=MultiSelectPageHeader-multiSelectPageHeader-] {
+		box-shadow: 0 2px 0 0 var(--accent-colour)
+	}
+	div[class*=MetadataPosterCard-legacyUnwatchedTag-],
+	div[class*=MetadataPosterCardOverlay-unplayedTag] {
+		position: absolute;
+		top: -14px;
+		right: -14px;
+		width: 28px;
+		height: 28px;
+		background-color: var(--accent-colour);
+		transform: rotate(45deg)
+	}
+	div[class*=SourceSidebarLink-isSelected-] {
+		background-color: rgba(255, 255, 255, .07);
+		box-shadow: inset 4px 0 0 0 var(--accent-colour)!important
+	}
+	button[class*=MetadataPosterCard-hoveredSelectedLink-],
+	button[class*=MetadataPosterCard-selectedLink-],
+	div[class*=MetadataPosterCardFace-isSelected-] {
+		box-shadow: 0 0 0 2px var(--accent-colour), 0 0 4px rgba(0, 0, 0, .3)!important
+	}
+	div[class*=MetadataPosterCardOverlay-selectCircle-],
+	div[class*=SelectButton-isSelected-],
+	div[class*=SelectButton-selectCircle-] {
+		border-color: var(--accent-rgb)!important;
+		background-color: var(--accent-colour)!important
+	}
+	a[class*=PosterCardLink-hoveredLink-] {
+		border-radius: 4px;
+		background-color: rgba(30, 30, 30, .6);
+		box-shadow: 0 0 0 1px var(--accent-colour), 0 0 4px rgba(0, 0, 0, .1)
+	}
+	.edit-lock-addon.locked {
+		background-color: var(--accent-colour);
+		border-color: var(--accent-colour)
+	}
+	.media-poster-container.selected {
+		box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--accent-colour)!important
+	}
+	span[class*=NavBarActivityButton-activityIcon-],
+	span[class*=NavBarActivityButton-isHighlighted-] {
+		background-color: var(--accent-colour)!important;
+		color: #000!important
+	}
+	div[class*=SessionTile-transcodeProgressPercent-] {
+		background-color: rgba(var(--accent-rgb), .5)!important
+	}
+	svg[class*=PlayButton-playCircle-]:hover {
+		border-color: var(--accent-colour)!important
+	}
+	button[class*=ActionButton-labeledActionButton-] {
+		background-color: var(--accent-colour);
+		color: #fff
+	}
+	.media-poster-container.selected .media-poster {
+		box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--accent-colour)
+	}
+	.media-poster-container.selected,
+	.media-poster::before {
+		border-color: var(--accent-colour) var(--accent-colour) transparent transparent!important
+	}
+	.media-poster.selected,
+	.media-poster::after {
+		color: #fff!important
+	}
+	.media-poster:hover {
+		box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 2px var(--accent-colour)!important
+	}
+	span[class*=DisclosureArrow-isSelected-] {
+		border-color: var(--accent-colour)
+	}
+	button[class*=PlayPauseOverlay-playButton]:hover svg[class*=PlayButton-playCircle],
+	svg[class*=PlayPauseOverlay-playCircle-] {
+		border-color: var(--accent-colour);
+		background-color: var(--accent-colour)
+	}
+	div[class*=SeekBar-seekBarFill-],
+	svg[class*=PlayButton-playCircle-]:hover {
+		background-color: var(--accent-colour)!important
+	}
+	div[class*=SeekBar-seekBarBuffer-] {
+		background-color: rgba(var(--accent-rgb), .5)!important
+	}
+	span[class*=NavBarActivityButton-label-] {
+		color: var(--accent-colour)!important
+	}
+	div[class*=MetadataPosterCardScanStatus-spinner-] {
+		border-color: var(--accent-colour) transparent transparent var(--accent-colour)
+	}
+	div[class*=Page-page] {
+		background-image: url(https://raw.githubusercontent.com/xunil75/Ombi-omBlur/master/blur-noise.png), url(https://raw.githubusercontent.com/xunil75/Ombi-omBlur/master/blur-light.png);
+		background-repeat: repeat, no-repeat;
+		background-attachment: fixed, fixed;
+		background-position: center center, center center;
+		background-size: auto, cover;
+		-webkit-background-size: auto, cover;
+		-moz-background-size: auto, cover;
+		-o-background-size: auto, cover;
+		min-height: 100%;
+		height: auto;
+		background-color: transparent;
+		font-family: 'Montserrat', sans-serif
+	}
+	div[class*=PageHeaderTitle-],
+	div[class*=PrePlay],
+	div[class*=SourceSidebar-openSidebar-],
+	div[class*=SourceSidebarLink-title-] {
+		font-family: 'Monsterrat', sans-serif
+	}
+}
