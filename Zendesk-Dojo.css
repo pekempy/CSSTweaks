@@ -1,0 +1,47 @@
+/* To be used in conjunction with Zendesk Dark https://chrome.google.com/webstore/detail/zendesk-dark-mode-theme/ndneacmpkcghablknbeiiopilgeomhon?hl=en */
+
+/* DM Sans site-wide */
+    body, input, textarea, h1, h2, h3, h4, h5, h6, address, label, select, button {
+        font-family: 'DM Sans', sans-serif !important;
+    }
+/* Change navigation colours */
+    nav[id="main_navigation"], .ember-view-filters, #main_navigation {
+        background-color:#93edd2 !important;   
+    }
+    #main_navigation .toolbar_link.active-product-link {
+        background-color:#80d0b8 !important;
+    }
+    div[data-test-id="status-badge-open"], .open {
+        background-color:#2BAC76 !important;   
+    }
+    div[data-test-id="status-badge-pending"], .pending {
+        background-color:#00665E !important;   
+    }
+    .filters > .pane.left ul.filters li.deleted_tickets a, .filters > .pane.left ul.filters li.legacy-styling.deleted_tickets .count, span[class="name"] > a,
+	input[data-test-id="ticket-pane-subject"], a[class="ember-view change_requester_email"] {
+        color: #00665E !important;   
+    }
+    .navigation-item.active {
+        border-bottom: 3px solid #2BAC76 !important;                                        
+    }
+
+/* SLA Colours */
+	.sla-policy-metric-action-label.counting.breached, .ticket_sla_label.counting.breached {
+        background-color: #FF4655 !important;
+    }
+	.sla-policy-metric-action-label.counting.not-breached, .ticket_sla_label.counting.not-breached {
+        background-color: #26D07C !important;
+    }
+
+/* Hide unused views */
+    li a[href="/agent/filters/360014268040"], 
+    li a[href="/agent/filters/360013353720"], 
+    li a[href="/agent/filters/360015032359"], 
+    li a[href="/agent/filters/360025690320"], 
+    li a[href="/agent/filters/360059269180"], 
+    li a[href="/agent/filters/suspended"] {
+        display:none !important;   
+    }
+    .filters > .pane.left ul.filters li, .user_filters > .pane.left ul.filters li, .user > .pane.left ul.filters li {
+     height: auto;   
+    }
