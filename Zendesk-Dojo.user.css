@@ -10,10 +10,6 @@
 ==/UserStyle== */
 
 @-moz-document domain("paymentsense.zendesk.com") {
-  a {
-    color: var(--link-color);
-  }
-}
 
 /* DM Sans site-wide */
     body, input, textarea, h1, h2, h3, h4, h5, h6, address, label, select, button {
@@ -60,3 +56,5 @@
     .filters > .pane.left ul.filters li, .user_filters > .pane.left ul.filters li, .user > .pane.left ul.filters li {
      height: auto;   
     }
+
+}
