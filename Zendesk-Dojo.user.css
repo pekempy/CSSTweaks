@@ -4,9 +4,7 @@
 @updateURL    https://raw.githubusercontent.com/pekempy/CSSTweaks/main/Zendesk-Dojo.user.css
 @version      0.0.1
 @license      GPL v3
-@preprocessor default
 @author       Pekempy
-@var color link-color "Link Color" red
 ==/UserStyle== */
 
 @-moz-document domain("paymentsense.zendesk.com") {
