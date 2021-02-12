@@ -15,23 +15,23 @@
     }
 /* Change navigation colours */
     nav[id="main_navigation"], .ember-view-filters, #main_navigation {
-        background-color:#93edd2 !important;   
+        background-color:#00ffeb !important;   
     }
     #main_navigation .toolbar_link.active-product-link {
-        background-color:#80d0b8 !important;
+        background-color: #00786e !important;
     }
     div[data-test-id="status-badge-open"], .open {
-        background-color:#2BAC76 !important;   
+        background-color:#00a699 !important;   
     }
     div[data-test-id="status-badge-pending"], .pending {
         background-color:#00665E !important;   
     }
     .filters > .pane.left ul.filters li.deleted_tickets a, .filters > .pane.left ul.filters li.legacy-styling.deleted_tickets .count, span[class="name"] > a,
 	input[data-test-id="ticket-pane-subject"], a[class="ember-view change_requester_email"] {
-        color: #00665E !important;   
+        color: #00a699 !important;   
     }
     .navigation-item.active {
-        border-bottom: 3px solid #2BAC76 !important;                                        
+        border-bottom: 3px solid #00a699 !important;                                        
     }
 
 /* SLA Colours */
