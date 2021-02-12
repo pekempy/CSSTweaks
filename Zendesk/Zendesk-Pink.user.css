@@ -449,8 +449,7 @@ div.LRmk.LRml.LRmm.LRmf.LRdb.LRx.LRev h3,
 	background: #333 !important;
 }
 
-.event .comment,
-.rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container {
+.event .comment{
 	background: #333333cc !important;
 	padding: 10px;
 	border-radius: 3px;
