@@ -125,7 +125,9 @@ tr,
 [data-test-id="table_main"] li {
 	border-color: #3f3f40 !important;
 }
-
+    #branding_header{
+        background-color: #252526 !important;
+    }
 .highcharts-container,
 .btn::after,
 .macro-preview__preview-icon,
