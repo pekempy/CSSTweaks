@@ -5,6 +5,7 @@
 @version 0.0.1
 @license GPL v3
 @author Pekempy
+@var color accent-colour "Accent colour for app.plex.tv" #31d0f7
 ==/UserStyle== */
 
 @-moz-document domain("app.plex.tv"), regexp("*:32400/*") {
