@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.0.6
+@version      0.0.7
 @license      GPL v3
 @author       Pekempy
 ==/UserStyle== */
@@ -249,13 +249,16 @@ tr>td {
 	color: #bababa !important;
 }
 
-tr:not(tr[class*="LR"]) {
-	background-color: #00a69933 !important;
-	border-color: #00a699 !important;
-    color: #ffffff !important;
+    tr:not(tr[class*="LR"]) {
+        background-color: #00a69933 !important;
+        border-color: #00a699 !important;
+        color: #ffffff !important;
     }
-    tr[class*="LR"]{
-        background-color:inherit !important;
+    div.base *,div[data-test-id="table_popover"],h3 {
+        background-color:#1e1e1e !important;
+    }
+    div[data-test-id="table_popover"] >div>div>div, input[data-garden-id="forms.media_input"], svg[data-garden-id="forms.media_figure"] {
+        color:#ffffff !important
     }
     [class*="LR"]{
         background-color: inherit !important;
