@@ -5,6 +5,4 @@
 
 
 ### Extra details
-- Zendesk Dojo requires "Zendesk Dark" extension    
-[Chrome](https://chrome.google.com/webstore/detail/zendesk-dark-mode-theme/ndneacmpkcghablknbeiiopilgeomhon?hl=en) | [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/zendesk-dark-mode-theme/)
-- Plex has a custom accent colour you can configure
+- Plex has a custom accent colour you can configure in the CSS code - both the RGB and hex
