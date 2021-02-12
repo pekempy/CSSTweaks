@@ -5,11 +5,10 @@
 @version 0.0.1
 @license GPL v3
 @author Pekempy
-@var color accent-colour "Accent colour for app.plex.tv" #31d0f7
 ==/UserStyle== */
 
 @-moz-document domain("app.plex.tv"), regexp("*:32400/*") {
-	@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
+	@import url(https://fonts.googleapis.com/css2?family=Montserrat);
 	/* Changing the "--accent-colour" here willlet you choose the accent colour used almost everywhere in Plex Web UI If you choose too bright of colour, you will miss some labels :( */
 	:root {
 		--accent-colour: #31d0f7;
