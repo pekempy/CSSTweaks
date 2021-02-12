@@ -244,21 +244,16 @@ tr:hover {
 	background-color: #3f3f40 !important;
 }
 
-.LRf.LRao.LRw.LRdl.LRea.LRdn.LRu.LRv.LRct.LRej.LRab.LRcq.LRek.LRel.LRem.LRed.LRee.LRdz {
-	color: #ffffff !important;
-}
-
 tr>td>a>span,
 tr>td {
 	color: #bababa !important;
 }
 
-.LRfs,.LRj1{
-	background-color: #00a699 !important;
+tr:not(tr[class*="LR"]) {
+	background-color: #00a69933 !important;
 	border-color: #00a699 !important;
-	opacity: 0.2 !important;
-}
-
+    color: #ffffff !important;
+    }
 ::-webkit-scrollbar-track {
 	background: #1e1e1e !important;
 }
