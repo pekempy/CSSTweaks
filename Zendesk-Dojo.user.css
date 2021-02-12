@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://raw.githubusercontent.com/pekempy/CSSTweaks/main/Zendesk-Dojo.user.css
-@version      0.0.2
+@version      0.0.3
 @license      GPL v3
 @author       Pekempy
 ==/UserStyle== */
@@ -253,6 +253,9 @@ tr:not(tr[class*="LR"]) {
 	background-color: #00a69933 !important;
 	border-color: #00a699 !important;
     color: #ffffff !important;
+    }
+    tr[class*="LR"]{
+        background-color:inherit !important;
     }
 ::-webkit-scrollbar-track {
 	background: #1e1e1e !important;
