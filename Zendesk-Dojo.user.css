@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://raw.githubusercontent.com/pekempy/CSSTweaks/main/Zendesk-Dojo.user.css
-@version      0.0.3
+@version      0.0.4
 @license      GPL v3
 @author       Pekempy
 ==/UserStyle== */
@@ -497,5 +497,8 @@ tr,
 	color: #D8DCDE;
 	box-shadow: none;
 }
-
+    div[data-test-id="sc-thread-container"] {
+        background-color: #252526 !important;
+    }
+    input[data-garden-id="dropdowns.multiselect_input"], input[data-test-id="threadSubject"]{ color: #ffffff!important;}
 }
