@@ -5,10 +5,14 @@
 @version      0.0.8
 @license      GPL v3
 @author       Pekempy
+@var    color   accent-colour   "Accent colour"     rgb(0,166,153)
+@var    color   open-colour     "Open ticket tag colour"    #00a699
+@var    color   pending-colour  "Pending ticket tag colour"     #00625a
 ==/UserStyle== */
 
 @-moz-document domain("paymentsense.zendesk.com") {
 
+    
 /* Zendesk Dark Dojo */
 
 /* THIS SECTION HIDES UNUSED VIEWS - MODIFY AS REQUIRED */
@@ -46,24 +50,18 @@ button {
 	font-family: 'DM Sans', sans-serif !important;
 }
 
-nav[id="main_navigation"],
-.ember-view-filters,
-#main_navigation {
-	background-color: #00ffeb !important;
-}
-
 #main_navigation .toolbar_link.active-product-link {
-	background-color: #00786e !important;
+	background-color: rgb(var(--accent-colour)) !important;
 }
 
 div[data-test-id="status-badge-open"],
 .open {
-	background-color: #00a699 !important;
+	background-color: var(--open-colour) !important;
 }
 
 div[data-test-id="status-badge-pending"],
 .pending {
-	background-color: #00665E !important;
+	background-color: var(--pending-colour) !important;
 }
 
 .filters>.pane.left ul.filters li.deleted_tickets a,
@@ -72,11 +70,11 @@ span[class="name"]>a,
 input[data-test-id="ticket-pane-subject"],
 a[class="ember-view change_requester_email"],
 .channel {
-	color: #00a699 !important;
+	color: rgb(var(--accent-colour)) !important;
 }
 
 .navigation-item.active {
-	border-bottom: 3px solid #00a699 !important;
+	border-bottom: 3px solid rgb(var(--accent-colour)) !important;
 }
 
 .sla-policy-metric-action-label.counting.breached,
@@ -252,8 +250,8 @@ tr>td {
 }
 
     tr:not(tr[class*="LR"]) {
-        background-color: #00a69933 !important;
-        border-color: #00a699 !important;
+        background-color: rgba(0,166,153,0.2) !important;
+        border-color: rgb(var(--accent-colour)) !important;
         color: #ffffff !important;
     }
     div.base *,div[data-test-id="table_popover"],h3 {
@@ -297,7 +295,7 @@ li[data-garden-id="dropdowns.previous_item"] >span{
 .zd-tag-item {
 	background-color: #3f3f40;
 	border-color: #2f3941;
-	color: #00a699;
+	color: rgb(var(--accent-colour));
 }
 
 input[data-garden-id="forms.input"],
@@ -308,14 +306,14 @@ footer,
 .thumbnail-container {
 	background: #3f3f404D !important;
 	border-color: #3f3f40 !important;
-	color: #00a699 !important;
+	color: rgb(var(--accent-colour)) !important;
 }
 
 .event:not(.is-public) .comment,
 .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container,
 .notice {
-	background-color: #00a69933 !important;
-	border-color: #00a699!important;
+	background-color: rgb(var(--accent-colour)) !important;
+	border-color: rgb(var(--accent-colour))!important;
 	border-style: solid;
 	border-width: 3px !important;
 	;
@@ -324,7 +322,7 @@ footer,
 
 th {
 	color: #ffffff !important;
-	border-bottom-color: #00a699 !important;
+	border-bottom-color: rgb(var(--accent-colour)) !important;
 	border-bottom-width: 3px !important;
 }
 
