@@ -1,7 +1,7 @@
 #CSS Tweaks
-##Auto-updating stylesheets for Stylus extension
-[Stylus - Google Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
-[Stylus - Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)
+##Auto-updating stylesheets for Stylus extension    
+[Stylus - Google Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)    
+[Stylus - Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)    
 
 
 ###Extra details
