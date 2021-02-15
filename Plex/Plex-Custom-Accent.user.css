@@ -7,7 +7,7 @@
 @author Pekempy
 ==/UserStyle== */
 
-@-moz-document domain("app.plex.tv"), regexp("*:32400/*") {
+@-moz-document domain("app.plex.tv"), regexp(".*:32400/.*") {
 	@import url(https://fonts.googleapis.com/css2?family=Montserrat);
 	/* Changing the "--accent-colour" here willlet you choose the accent colour used almost everywhere in Plex Web UI If you choose too bright of colour, you will miss some labels :( */
 	:root {
