@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.5
+@version      0.1.6
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -215,7 +215,7 @@
 	input[data-garden-id='dropdowns.multiselect_input'], input[data-test-id=threadSubject], div[data-garden-id='tables.header_row'] {
 		color: #ffffff!important;
 	}
-	div[data-garden-id='forms.faux_input'], sinput[data-garden-id='forms.media_input'], div[data-garden-id="dropdowns.select"], li[data-garden-id="dropdowns.item"], li[data-garden-id="dropowns.next_item"], div[data-garden-id="dropdowns.menu_wrapper"], ul[data-garden-id="dropdowns.menu"], li[role="option"]  {
+	div[data-garden-id='forms.faux_input'], sinput[data-garden-id='forms.media_input'], div[data-garden-id="dropdowns.select"], li[data-garden-id="dropdowns.item"], li[data-garden-id="dropowns.next_item"], div[data-garden-id="dropdowns.menu_wrapper"], ul[data-garden-id="dropdowns.menu"], li[role="option"], div[class^="Tooltip__TooltipWrapper"]  {
 		color: #ffffff !important;
 		background-color: #252526 !important;
 	}
