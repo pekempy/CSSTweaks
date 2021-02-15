@@ -182,11 +182,11 @@
 		border-style: solid!important;
 		border-color: #252526!important;
 		border-radius: 3px;
-		background: #333cc !important;
+		background: #333333cc !important;
 		;
 	}
 	.zd-comment.zd-comment-pre-styled div {
-		background-color: #00000!important;
+		background-color: #00000000!important;
 	}
 	.comment_input:not(.is-public) .zendesk-editor--rich-text-container {
 		border-color: #efdaa3!important;
