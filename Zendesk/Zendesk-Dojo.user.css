@@ -2,10 +2,11 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.0.8
+@version      0.1.0
 @license      GPL v3
 @author       Pekempy
-@var    color   accent-colour   "Accent colour"     rgb(0,166,153)
+@var    color   accent-colour   "Accent colour"     #00a699
+@var    color   accent-transp   "Accent transparency"   #00a69933
 @var    color   open-colour     "Open ticket tag colour"    #00a699
 @var    color   pending-colour  "Pending ticket tag colour"     #00625a
 ==/UserStyle== */
@@ -51,7 +52,7 @@ button {
 }
 
 #main_navigation .toolbar_link.active-product-link {
-	background-color: rgb(var(--accent-colour)) !important;
+	background-color: var(--accent-colour) !important;
 }
 
 div[data-test-id="status-badge-open"],
@@ -70,11 +71,11 @@ span[class="name"]>a,
 input[data-test-id="ticket-pane-subject"],
 a[class="ember-view change_requester_email"],
 .channel {
-	color: rgb(var(--accent-colour)) !important;
+	color: var(--accent-colour) !important;
 }
 
 .navigation-item.active {
-	border-bottom: 3px solid rgb(var(--accent-colour)) !important;
+	border-bottom: 3px solid var(--accent-colour) !important;
 }
 
 .sla-policy-metric-action-label.counting.breached,
@@ -84,7 +85,7 @@ a[class="ember-view change_requester_email"],
 
 .sla-policy-metric-action-label.counting.not-breached,
 .ticket_sla_label.counting.not-breached {
-	background-color: #00a699 !important;
+	background-color: var(--accent-colour) !important;
 }
 
 html,
@@ -250,8 +251,8 @@ tr>td {
 }
 
     tr:not(tr[class*="LR"]) {
-        background-color: rgba(0,166,153,0.2) !important;
-        border-color: rgb(var(--accent-colour)) !important;
+        background-color: var(--accent-transp) !important;
+        border-color: var(--accent-colour) !important;
         color: #ffffff !important;
     }
     div.base *,div[data-test-id="table_popover"],h3 {
@@ -295,7 +296,7 @@ li[data-garden-id="dropdowns.previous_item"] >span{
 .zd-tag-item {
 	background-color: #3f3f40;
 	border-color: #2f3941;
-	color: rgb(var(--accent-colour));
+	color: var(--accent-colour);
 }
 
 input[data-garden-id="forms.input"],
@@ -306,14 +307,14 @@ footer,
 .thumbnail-container {
 	background: #3f3f404D !important;
 	border-color: #3f3f40 !important;
-	color: rgb(var(--accent-colour)) !important;
+	color: var(--accent-colour) !important;
 }
 
 .event:not(.is-public) .comment,
 .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container,
 .notice {
-	background-color: rgb(var(--accent-colour)) !important;
-	border-color: rgb(var(--accent-colour))!important;
+	background-color: var(--accent-colour) !important;
+	border-color: var(--accent-colour)!important;
 	border-style: solid;
 	border-width: 3px !important;
 	;
@@ -322,7 +323,7 @@ footer,
 
 th {
 	color: #ffffff !important;
-	border-bottom-color: rgb(var(--accent-colour)) !important;
+	border-bottom-color: var(--accent-colour) !important;
 	border-bottom-width: 3px !important;
 }
 
