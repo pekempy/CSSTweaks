@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.8
+@version      0.1.9
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -11,6 +11,7 @@
 @var    color   pending-colour  "Pending ticket tag colour"     #00625a
 @var    color   hold-colour  "Hold ticket tag colour"     #6c7a79
 @var    color   solved-colour   "Solved ticket tag colour"  #a7a7a7
+@var    color   new-colour   "New ticket tag colour"  #dbdbdb
 ==/UserStyle== */
 
 @-moz-document regexp('.*zendesk.com\\/agent\\/.*') {
@@ -29,19 +30,23 @@
 	#main_navigation .toolbar_link.active-product-link {
 		background-color: var(--accent-colour)!important;
 	}
-	.open, div[data-test-id=status-badge-open] {
+	.open, div[data-test-id="status-badge-open"] {
 		background-color: var(--open-colour)!important;
 	}
-	.pending, div[data-test-id=status-badge-pending] {
+	.pending, div[data-test-id="status-badge-pending"] {
 		background-color: var(--pending-colour)!important;
 	}
-	.hold, div[data-test-id=status-badge-hold] {
+	.hold, div[data-test-id="status-badge-hold"] {
 		background-color: var(--hold-colour)!important;
 	}
-	.solved, div[data-test-id=status-badge-solved] {
+	.solved, div[data-test-id="status-badge-solved"] {
 		color: #000 !important;
 		background-color: var(--solved-colour)!important;
 	}
+    .new, div[data-test-id="status-badge-new"] {
+		color: #000 !important;
+		background-color: var(--new-colour)!important;
+    }
 	.channel, .filters>.pane.left ul.filters li.deleted_tickets a, .filters>.pane.left ul.filters li.legacy-styling.deleted_tickets .count, a[class='ember-view change_requester_email'], input[data-test-id=ticket-pane-subject], span[class=name]>a, .page__heading {
 		color: var(--accent-colour)!important;
 	}
