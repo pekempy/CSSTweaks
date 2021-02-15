@@ -2,24 +2,28 @@
 @name         MS2 Dark Theme
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Mothership2.user.css
-@version      0.0.3
+@version      0.0.2
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
 @var    color   accent-transp   "Accent transparency"   #00a69933
 ==/UserStyle== */
 @-moz-document regexp('https://ms.paymentsense.com/.*') {
-.card-header
+.card-header, .row:first-child
 {
     background-color: var(--accent-colour) !important;
+    color: #ffffff !important;
 }
-.header, .row, .card-block, .form-control, .dropdown-toggle, .input-group-addon, .iframe-container, .list-group-item,.tab-pane, .utility-popup,.utility-popup.open .notifications  {
+.header, .form-control, .dropdown-toggle, .input-group-addon, .iframe-container, .list-group-item,.tab-pane, .utility-popup,.utility-popup.open .notifications, .row  {
     background-color: #323232 !important;
     color: #ffffff !important;
 }
 .iframe-container iframe {
     filter: invert(100%) !important;
 }
+row, .card-block{
+    background-color: #323232 !important;
+    }
 .fa, 
 .btn, 
 .ng-binding,
@@ -28,28 +32,27 @@
     color: var(--accent-colour) !important;
     fill: var(--accent-colour) !important;
 }
-.table.table-bordered.table-info, .highlight , .primary-fields, .card-primary .card-block .message-panel.bg-info, .special-information, .edit .action-row, .title .lowlight, .edit h5.title, .edit {
+.table.table-bordered.table-info, .highlight , .primary-fields, .card-primary .card-block .message-panel.bg-info, .special-information, .edit .action-row, .title .lowlight, .edit h5.title, .edit, .empty-message, .btn, .btn-primary,.badge-primary, .badge-default {
     background-color: var(--accent-transp) !important;
-    border-color: var(--accent-colour) !important;
-    border-top: none !important;
-}
-.btn-primary, .badge-primary, .badge-default {
-    background-color: #2f2f2f !important;
-    color :#000000!important;
-    border-color: var(--accent-colour) !important;
+    border: 1px solid var(--accent-colour) !important;
+    color: #ffffff !important;
 }
 label[name="merchantBusinessName"] {
     color: #fff !important;
 }
 .btn-radio.active, .btn-radio.active > .fa, .pagination li.active a, h5 {
-    background-color: var(--accent-colour) !important;
+    background-color: #464646 !important;
     border-color: var(--accent-colour) !important;
-    color: #000000 !important;
+    color: #fff !important;
 }
-.pagination a, tr[name="UserRow"]:hover, .btn-radio {
-    background-color: var(--accent-colour)1c !important;
+.pagination a, tr[name="UserRow"]:hover, .btn-radio, tr[class="ng-scope"]:hover {
+    background-color: #626262 !important;
     border-color: var(--accent-colour) !important;
 }
+    div[name="taFrontPanel"] div, div[name="campaignName"] strong, div[show-loader="vm.loader"] strong{
+        background-color: #464646 !important;
+        color: #ffffff !important;
+    }
 
 body, html {
 		color: #bababa!important;
