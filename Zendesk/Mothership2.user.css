@@ -28,7 +28,7 @@ row, .card-block{
 .btn, 
 .ng-binding,
 .table-link > a,
-.badge > span, a, .btn>img {
+.badge > span, a, .btn>img, .dropdown-toggle {
     color: var(--accent-colour) !important;
     fill: var(--accent-colour) !important;
 }
