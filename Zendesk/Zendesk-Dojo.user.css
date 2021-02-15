@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.2
+@version      0.1.5
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -166,7 +166,7 @@
 		;
 	}
 	.index__c-menu__item___36mO8:not(.index__c-menu__item--add___3d3og):hover, .jGrowl-notification, .zd-menu-item:hover .LRdu:hover {
-		color: #00000000!important;
+		color: #000!important;
 		background-color: #757575!important;
 		;
 	}
@@ -174,7 +174,7 @@
 		background: #252526;
 	}
 	.LRjj, .main_panes.reporting .stat-set.selected {
-		background: #333333!important;
+		background: #333!important;
 	}
 	.event .comment {
 		padding: 10px;
@@ -213,20 +213,19 @@
 		background-color: #252526!important;
 	}
 	input[data-garden-id='dropdowns.multiselect_input'], input[data-test-id=threadSubject], div[data-garden-id='tables.header_row'] {
-		color: #fff!important;
+		color: #ffffff!important;
 	}
-	div[data-garden-id='forms.faux_input'], sinput[data-garden-id='forms.media_input'] {
-		color: #fff !important;
+	div[data-garden-id='forms.faux_input'], sinput[data-garden-id='forms.media_input'], div[data-garden-id="dropdowns.select"], li[data-garden-id="dropdowns.item"], li[data-garden-id="dropowns.next_item"], div[data-garden-id="dropdowns.menu_wrapper"], ul[data-garden-id="dropdowns.menu"], li[role="option"]  {
+		color: #ffffff !important;
 		background-color: #252526 !important;
 	}
-    .z-field--input--text, .z-field--textarea, .trigger-condition, .trigger-action, #page, .current, .form_element, .actions, .tabs_content, .form_field > p, .form_field > input, .form_field label, .form_element label .form_field a, #search-result, #query, .blue_box_top, .blue_box_bottom, .side-box-content, div[data-garden-id="dropdowns.select"], li[data-garden-id="dropdowns.item"] {
+    .z-field--input--text, .z-field--textarea, .trigger-condition, .trigger-action, #page, .current, .form_element, .actions, .tabs_content, .form_field > p, .form_field > input, .form_field label, .form_element label .form_field a, #search-result, #query, .blue_box_top, .blue_box_bottom, .side-box-content {
         background-color: #252526 !important;
-        border-color: var(--accent-colour);
-        border-width: 1px solid var(--accent-colour);
+        border-color: var(--accent-colour) !important;
+        border-width: 1px solid var(--accent-colour) !important;
         color: #ffffff !important;
     }
     li[aria-selected="true"] {
-        background-color: var(--accent-transp) !important;
+        background-color: var(--accent-transp);
     }
-    
 }
