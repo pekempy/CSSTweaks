@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.2
+@version      0.1.3
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -39,10 +39,10 @@
 		background-color: var(--hold-colour)!important;
 	}
 	.solved, div[data-test-id=status-badge-solved] {
-		color: #000 !important;
+		color: #000!important;
 		background-color: var(--solved-colour)!important;
 	}
-	.channel, .filters>.pane.left ul.filters li.deleted_tickets a, .filters>.pane.left ul.filters li.legacy-styling.deleted_tickets .count, a[class='ember-view change_requester_email'], input[data-test-id=ticket-pane-subject], span[class=name]>a {
+	.channel, .filters>.pane.left ul.filters li.deleted_tickets a, .filters>.pane.left ul.filters li.legacy-styling.deleted_tickets .count, .page__heading, a[class='ember-view change_requester_email'], input[data-test-id=ticket-pane-subject], span[class=name]>a {
 		color: var(--accent-colour)!important;
 	}
 	.navigation-item.active {
@@ -65,7 +65,6 @@
 		background-clip: border-box;
 		background-origin: padding-box;
 		background-size: auto;
-		;
 	}
 	#branding_header {
 		background-color: #252526!important;
@@ -75,7 +74,6 @@
 		border-color: #3f3f40!important;
 		background: #252526!important;
 		box-shadow: none!important;
-		;
 	}
 	tr:hover {
 		background-color: #3f3f40!important;
@@ -87,7 +85,6 @@
 		color: #fff!important;
 		border-color: var(--accent-colour)!important;
 		background-color: var(--accent-transp)!important;
-		;
 	}
 	div.base *, div[data-test-id=table_popover], h3 {
 		background-color: #1e1e1e!important;
@@ -107,7 +104,6 @@
 	::-webkit-scrollbar-track {
 		border-radius: 10px;
 		box-shadow: inset 0 0 5px #000;
-		;
 	}
 	::-webkit-scrollbar-thumb {
 		background: #333;
@@ -119,20 +115,17 @@
 		color: var(--accent-colour);
 		border-color: #2f3941;
 		background-color: #3f3f40;
-		;
 	}
 	.thumbnail-container, .zd-tag-menu-root, div[data-garden-id='dropdowns.faux_input'], footer, input[data-garden-id='forms.input'], label[data-garden-id='forms.checkbox'] {
 		color: var(--accent-colour)!important;
 		border-color: #3f3f40!important;
 		background: #3f3f404d!important;
-		;
 	}
 	.event:not(.is-public) .comment, .notice, .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container {
 		border-width: 3px!important;
 		border-style: solid;
 		border-color: var(--accent-colour)!important;
 		background-color: var(--accent-transp)!important;
-		;
 	}
 	.notice, .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container {
 		color: #fff!important;
@@ -141,17 +134,14 @@
 		color: #fff!important;
 		border-bottom-width: 3px!important;
 		border-bottom-color: var(--accent-colour)!important;
-		;
 	}
 	.iframe_app_view_wrapper, iframe>body, li[data-garden-id='dropdowns.item'], ul[data-garden-id='dropdowns.menu'] {
 		border-color: #2f3941!important;
 		background-color: #3f3f40!important;
-		;
 	}
 	.LRje, .modal-header {
 		padding-top: 10px;
 		border: 0;
-		;
 	}
 	#admin_content .overview .overview_content .feature_usages .feature_usage, #admin_content .overview h3, .LRfm, .activities .item, .filters>.pane.left .filters.more, .main_panes.reporting .widget .header.bordered, .main_panes.reporting.bordered .widget .widget-padding, .main_panes>.pane.right, .rule-table__row .rule-table__data, .split_pane.collapsible .pane.left, .stacked_menu_settings .section .title, .ticket-sidebar .property_box, .user>.pane.left .filters.more, .user_filters>.pane.left .filters.more, .workspace>.pane.right, [data-test-id=table-regular-row] td, [data-test-id=table_main] li, tr {
 		border-color: #3f3f40!important;
@@ -163,12 +153,10 @@
 		color: #bababa!important;
 		border: 0;
 		background: 0 0!important;
-		;
 	}
 	.index__c-menu__item___36mO8:not(.index__c-menu__item--add___3d3og):hover, .jGrowl-notification, .zd-menu-item:hover .LRdu:hover {
 		color: #000!important;
 		background-color: #757575!important;
-		;
 	}
 	.main_panes.reporting .statsTable tbody tr:nth-child(even), .modal-body, .modal-footer, .modal-header {
 		background: #252526;
@@ -182,11 +170,10 @@
 		border-style: solid!important;
 		border-color: #252526!important;
 		border-radius: 3px;
-		background: #333333cc !important;
-		;
+		background: #333cc!important;
 	}
 	.zd-comment.zd-comment-pre-styled div {
-		background-color: #00000000!important;
+		background-color: #00000!important;
 	}
 	.comment_input:not(.is-public) .zendesk-editor--rich-text-container {
 		border-color: #efdaa3!important;
@@ -212,11 +199,18 @@
 	div[data-test-id=sc-thread-container] {
 		background-color: #252526!important;
 	}
-	input[data-garden-id='dropdowns.multiselect_input'], input[data-test-id=threadSubject], div[data-garden-id='tables.header_row'] {
+	div[data-garden-id='tables.header_row'], input[data-garden-id='dropdowns.multiselect_input'], input[data-test-id=threadSubject] {
 		color: #fff!important;
 	}
 	div[data-garden-id='forms.faux_input'], sinput[data-garden-id='forms.media_input'] {
-		color: #fff !important;
-		background-color: #252526 !important;
+		color: #fff!important;
+		background-color: #252526!important;
+	}
+	#page, #query, #search-result, .actions, .blue_box_bottom, .blue_box_top, .current, .form_element, .form_element label .form_field a, .form_field label, .form_field>input, .form_field>p, .side-box-content, .tabs_content, .trigger-action, .trigger-condition, .z-field--input--text, .z-field--textarea {
+		color: #fff!important;
+		;
+		border-width: 1px solid var(--accent-colour);
+		border-color: var(--accent-colour);
+		background-color: #252526!important;
 	}
 }
