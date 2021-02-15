@@ -13,7 +13,7 @@
 @var    color   solved-colour   "Solved ticket tag colour"  #a7a7a7
 ==/UserStyle== */
 
-@-moz-document domain('*.zendesk.com/agent/') {
+@-moz-document regexp('.*zendesk.com\\/agent\\/.*') {
 	/* Zendesk Dark Dojo */
 	/* THIS SECTION HIDES UNUSED VIEWS - MODIFY AS REQUIRED */
 	li a[href='/agent/filters/360014268040'], li a[href='/agent/filters/360013353720'], li a[href='/agent/filters/360015032359'], li a[href='/agent/filters/360025690320'], li a[href='/agent/filters/360059269180'], li a[href='/agent/filters/suspended'] {
