@@ -2,13 +2,15 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.1
+@version      0.1.2
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
 @var    color   accent-transp   "Accent transparency"   #00a69933
 @var    color   open-colour     "Open ticket tag colour"    #00a699
 @var    color   pending-colour  "Pending ticket tag colour"     #00625a
+@var    color   hold-colour  "Hold ticket tag colour"     #6c7a79
+@var    color   solved-colour   "Solved ticket tag colour"  #a7a7a7
 ==/UserStyle== */
 
 @-moz-document domain('paymentsense.zendesk.com') {
@@ -33,6 +35,13 @@
 	.pending, div[data-test-id=status-badge-pending] {
 		background-color: var(--pending-colour)!important;
 	}
+	.hold, div[data-test-id=status-badge-hold] {
+		background-color: var(--hold-colour)!important;
+	}
+	.solved, div[data-test-id=status-badge-solved] {
+		color: #000 !important;
+		background-color: var(--solved-colour)!important;
+	}
 	.channel, .filters>.pane.left ul.filters li.deleted_tickets a, .filters>.pane.left ul.filters li.legacy-styling.deleted_tickets .count, a[class='ember-view change_requester_email'], input[data-test-id=ticket-pane-subject], span[class=name]>a {
 		color: var(--accent-colour)!important;
 	}
@@ -48,7 +57,6 @@
 	.LRjs, .section.ticket .tab-controls-container, body, html {
 		color: #bababa!important;
 		border: 0;
-		;
 		background-color: #1e1e1e;
 		background-image: url(data:image/png;base64,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);
 		background-repeat: repeat;
@@ -57,6 +65,7 @@
 		background-clip: border-box;
 		background-origin: padding-box;
 		background-size: auto;
+		;
 	}
 	#branding_header {
 		background-color: #252526!important;
@@ -64,9 +73,9 @@
 	#admin_content .overview .overview_content .system_updates .system_updates--control, #admin_content .overview header, #admin_content .overview header h1, #branding_header div, #main_navigation, .LRbt, .LRgp, .LRhb, .LRhc, .LRhh, .LRhr, .LRx, .btn, .btn-group.open .dropdown-toggle:not(.btn-inverse), .current_collaborators .zd-tag-menu-root, .dashboard-container .btn-group.open .dropdown-toggle:not(.btn-inverse), .dropdown-menu, .index__c-tooltip--light___nZDli, .indicators, .indicators .cell-value, .indicators ul, .main_panes.reporting .stat-row, .main_panes>header, .main_panes>header .pane .btn, .merge-holder .merge_window .ticket_card, .merge-holder .merge_window .user_card, .query-box .query-container .advanced-search, .query-box .query-container .clear-search, .query-box .query-container .query-field, .query-box .query-container .share-button, .text__c-txt__input___38pRd, .ticket-sidebar .form_field textarea, .ticket-sidebar .form_field>input, .user-picker-menu-base .zd-tag-menu-root, .workspace>header, .workspace>header .pane .btn, .zd-menu-item, .zd-menu-root, .zd-searchmenu-base, .zd-selectmenu-base, .zd-selectmenu-base-content, .zendesk-editor--rich-text-container, button.highlighted, h4.list-heading, input.highlighted, p>span, ul.highlighted {
 		color: #bababa!important;
 		border-color: #3f3f40!important;
-		;
 		background: #252526!important;
 		box-shadow: none!important;
+		;
 	}
 	tr:hover {
 		background-color: #3f3f40!important;
@@ -76,9 +85,9 @@
 	}
 	tr:not(tr[class*=LR]) {
 		color: #fff!important;
-		;
 		border-color: var(--accent-colour)!important;
 		background-color: var(--accent-transp)!important;
+		;
 	}
 	div.base *, div[data-test-id=table_popover], h3 {
 		background-color: #1e1e1e!important;
@@ -97,8 +106,8 @@
 	}
 	::-webkit-scrollbar-track {
 		border-radius: 10px;
-		;
 		box-shadow: inset 0 0 5px #000;
+		;
 	}
 	::-webkit-scrollbar-thumb {
 		background: #333;
@@ -108,22 +117,22 @@
 	}
 	.zd-tag-item {
 		color: var(--accent-colour);
-		;
 		border-color: #2f3941;
 		background-color: #3f3f40;
+		;
 	}
 	.thumbnail-container, .zd-tag-menu-root, div[data-garden-id='dropdowns.faux_input'], footer, input[data-garden-id='forms.input'], label[data-garden-id='forms.checkbox'] {
 		color: var(--accent-colour)!important;
-		;
 		border-color: #3f3f40!important;
 		background: #3f3f404d!important;
+		;
 	}
 	.event:not(.is-public) .comment, .notice, .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container {
 		border-width: 3px!important;
-		;
 		border-style: solid;
 		border-color: var(--accent-colour)!important;
 		background-color: var(--accent-transp)!important;
+		;
 	}
 	.notice, .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container {
 		color: #fff!important;
@@ -131,18 +140,18 @@
 	th {
 		color: #fff!important;
 		border-bottom-width: 3px!important;
-		;
 		border-bottom-color: var(--accent-colour)!important;
+		;
 	}
 	.iframe_app_view_wrapper, iframe>body, li[data-garden-id='dropdowns.item'], ul[data-garden-id='dropdowns.menu'] {
 		border-color: #2f3941!important;
-		;
 		background-color: #3f3f40!important;
+		;
 	}
 	.LRje, .modal-header {
 		padding-top: 10px;
-		;
 		border: 0;
+		;
 	}
 	#admin_content .overview .overview_content .feature_usages .feature_usage, #admin_content .overview h3, .LRfm, .activities .item, .filters>.pane.left .filters.more, .main_panes.reporting .widget .header.bordered, .main_panes.reporting.bordered .widget .widget-padding, .main_panes>.pane.right, .rule-table__row .rule-table__data, .split_pane.collapsible .pane.left, .stacked_menu_settings .section .title, .ticket-sidebar .property_box, .user>.pane.left .filters.more, .user_filters>.pane.left .filters.more, .workspace>.pane.right, [data-test-id=table-regular-row] td, [data-test-id=table_main] li, tr {
 		border-color: #3f3f40!important;
@@ -153,13 +162,13 @@
 	.LRb, .LRd, .LRer, .LRfl>svg, .LRgu, .LRir, .LRjc, .LRno h3, .LRny, .LRof, .c-btn, .customer_context, .dashboard-container, .dashboard-container .overview .overview-cell.basic-overview-cell .name, .dashboard-container .overview .overview-cell:first-child .name, .dashboard-container .section, .ember-view, .ember-view a, .filters>.pane.left ul.filters li.legacy-styling .count, .footer .object_options .dropdown-toggle, .macro-selector .zd-menu-item>a, .main_panes.reporting .benchmark.legend-container .legend, .main_panes.reporting .sub-nav, .main_panes.reporting.bordered .pane.section, .main_panes.reporting.bordered .widget, .main_panes>.pane.left, .mast, .merge-holder .merge_window, .merge-holder .merge_window .option .border, .modal, .property_box, .section.ticket, .ticket .ticket-resolution-footer, .user>.pane.left ul.filters li.legacy-styling .count, .user_filters>.pane.left ul.filters li.legacy-styling .count, .workspace.apps:not(.ticket_editor_app) header, .workspace>.pane.left, .zendesk-editor--plaintext-box .zendesk-editor--plain-text-comment, .zendesk-editor--rich-text-comment, .zendesk-editor--toolbar, div.LRmk.LRml.LRmm.LRmf.LRdb.LRx.LRev h3, footer .object_options .dropdown-toggle, section.filters .left header h1, section.filters .right header h1, section.incidents .left header h1, section.incidents .right header h1, section.user_filters .left header h1, section.user_filters .right header h1 {
 		color: #bababa!important;
 		border: 0;
-		;
 		background: 0 0!important;
+		;
 	}
 	.index__c-menu__item___36mO8:not(.index__c-menu__item--add___3d3og):hover, .jGrowl-notification, .zd-menu-item:hover .LRdu:hover {
 		color: #000!important;
-		;
 		background-color: #757575!important;
+		;
 	}
 	.main_panes.reporting .statsTable tbody tr:nth-child(even), .modal-body, .modal-footer, .modal-header {
 		background: #252526;
@@ -171,13 +180,13 @@
 		padding: 10px;
 		border-width: 2px!important;
 		border-style: solid!important;
-		;
 		border-color: #252526!important;
 		border-radius: 3px;
-		background: #333333cc !important;
+		background: #333cc !important;
+		;
 	}
 	.zd-comment.zd-comment-pre-styled div {
-		background-color: #00000000!important;
+		background-color: #00000!important;
 	}
 	.comment_input:not(.is-public) .zendesk-editor--rich-text-container {
 		border-color: #efdaa3!important;
@@ -203,7 +212,11 @@
 	div[data-test-id=sc-thread-container] {
 		background-color: #252526!important;
 	}
-	input[data-garden-id='dropdowns.multiselect_input'], input[data-test-id=threadSubject] {
+	input[data-garden-id='dropdowns.multiselect_input'], input[data-test-id=threadSubject], div[data-garden-id='tables.header_row'] {
 		color: #fff!important;
+	}
+	div[data-garden-id='forms.faux_input'], sinput[data-garden-id='forms.media_input'] {
+		color: #fff !important;
+		background-color: #252526 !important;
 	}
 }
