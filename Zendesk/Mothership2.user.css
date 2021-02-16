@@ -2,7 +2,7 @@
 @name         MS2 Dark Theme
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/Mothership2.user.css
-@version      0.0.4
+@version      0.0.6
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -21,7 +21,7 @@
 		background-color: #3232321a!important;
 	}
 	.yellow-background {
-		background-color: #6a4c7a!important;
+		background-color: var(--accent-transp)!important;
 	}
 	.badge.badge-primary {
 		background-color: #363636!important;
