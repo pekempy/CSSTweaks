@@ -2,7 +2,7 @@
 @name         MS2 Dark Theme
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/Mothership2.user.css
-@version      0.0.6
+@version      0.0.7
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -63,9 +63,15 @@
 	.card {
 		background-color: #46464633!important;
 	}
+    .card .bg-warning { 
+        background-color: #46464633 !important;
+    }
 	li: hover, tr[name="UserRow"]: hover, .btn-radio, tr[class="ng-scope"]: hover {
 		background-color: var(--accent-transp)!important;
 	}
+    table .danger>td {
+        background-color: #ff62624f !important;
+    }
 	body, html {
 		color: #bababa!important;
 		border: 0;
