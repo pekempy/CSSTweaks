@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.9
+@version      0.1.10
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -94,6 +94,9 @@
 		background-color: var(--accent-transp)!important;
 		;
 	}
+    span, .event .comment .zd-comment.zd-comment-pre-styled span {
+        background: #0000 !important;
+    }
 	div.base *, div[data-test-id=table_popover], h3 {
 		background-color: #1e1e1e!important;
 	}
