@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.10
+@version      0.1.11
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -135,13 +135,16 @@
 		background: #3f3f404d!important;
 		;
 	}
-	.event:not(.is-public) .comment, .notice, .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container {
+	.event:not(.is-public) .comment, .notice, .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container, .ember-view.selected {
 		border-width: 3px!important;
 		border-style: solid;
 		border-color: var(--accent-colour)!important;
 		background-color: var(--accent-transp)!important;
 		;
-	}
+	} 
+    .ember-view.legacy-styling:hover {
+        background-color: var(--accent-transp)!important;
+    }
 	.notice, .rich_text .comment_input:not(.is-public) .zendesk-editor--rich-text-container {
 		color: #fff!important;
 	}
