@@ -2,7 +2,7 @@
 @name         Billing Portal
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/BillingPortal.user.css
-@version      0.0.1
+@version      0.0.2
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -24,10 +24,13 @@
         border-color: var(--accent-colour) !important;
         color: #ffffff !important;
     }
-    .ps-container a {
+    .ps-container a, .adminmain .row div:first-child, #targetpage, .search-text {
         color: #ffffff !important;
     }
-    .nav-tabs>li>a:hover  {
+    .dashboard-panel > span {
+        color: var(--accent-colour) !important;
+    }
+    .nav-tabs>li>a:hover, .btn  {
         background-color: var(--accent-transp) !important;
         border-color: var(--accent-transp) !important;
     }
