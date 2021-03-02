@@ -2,7 +2,7 @@
 @name         Dojo Mothership
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/DojoMS.user.css
-@version      0.0.1
+@version      0.0.2
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -16,72 +16,63 @@ regexp('https://quote.paymentsense.com/.*'),
 regexp('https://customer.paymentsense.com/.*'),
 regexp('https://switcher.paymentsense.com/.*'),
 regexp('https://partnerships.paymentsense.com/.*'),
-regexp('https://cms.connect.paymentsense.cloud/.*'),
 regexp('https://businessfunding.paymentsense.com/.*'),
+regexp('https://search.paymentsense.com/.*'),
 regexp('https://hub.paymentsense.com/.*') {
-    .header,
-    .header-inner,
-    .body-content {
-        background-image: none !important;
-        border-bottom: 0px !important;
-        margin-right: 15px;
-        margin-left: 15px;
-        border-radius: 5px !important;
-        background-color: #0000 !important;
+
+    .mat-toolbar, .mat-chip.mat-standard-chip {
+        background-color: var(--accent-colour);
+        border-radius: 5px;
     }
-    .nav-tabs > li.active > a {
+    .mat-card, .mat-card-title, .mat-card-description, .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary, mat-drawer, mat-expansion-panel-header, .mat-expansion-panel-body, .mat-paginator-outer-container {
+        color: #ccc !important;
+        background-color: #313131 !important;
+    }
+    .mat-button-toggle-label-content {
+        color: #fff;
+    }
+    a.active {
+        background-color: var(--accent-transp) !important;
+    }
+    .sales-support-info {
+        background-color: var(--accent-transp) !important;
+        border: 1px solid var(--accent-colour) !important;
+        color: #fff !important;
+    }
+    .has-text-centered h2, input::placeholder, .sales-support-info p, .sales-support-info span{
+        color :#ccc !important;
+    }
+    mat-table, table, mat-cell, tr td, tr th, mat-header-cell, .mat-button, #title, .mat-tab-label-content {
+        background: transparent !important; 
+        color: #fff !important;
+    }
+    .mat-chip {
+        color: #fff !important;
+    }
+    .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+        background-color: var(--accent-transp) !important;;
+    }
+    .mat-button-toggle-checked {
         background-color: var(--accent-colour) !important;
-        border-color: var(--accent-colour) !important;
-        color: #ffffff !important;
     }
-    .ps-container a,
-    .adminmain .row div:first-child,
-    #targetpage,
-    .search-text {
-        color: #ffffff !important;
+    .mat-button-toggle-appearance-standard {
+        background: none !important;
     }
-    .dashboard-panel > span {
+    .mat-flat-button.mat-primary, .mat-raised-button.mat-primary {
+        background-color: var(--accent-colour) !important;
+    }
+    .tertiary-link, a {
         color: var(--accent-colour) !important;
     }
-    .nav-tabs > li > a:hover,
-    .btn {
-        background-color: var(--accent-transp) !important;
-        border-color: var(--accent-transp) !important;
-    }
-    .panel-heading,
-    .accountpage {
-        background-image: none !important;
-        background-color: var(--accent-transp) !important;
-        color: #ffffff !important;
-    }
-    .panel,
-    .panel-default {
-        background-color: #4343433d;
-        color: #ffffff !important;
-    }
-    .form-control,
-    input,
-    .form-control[disabled],
-    .ps-container .btn-bill-info {
-        background-color: #0404045e;
-        color: #ffffff !important;
-    }
-    #divPleaseWait,
-    .pleasewait > div > span {
-        background-color: #43535370 !important;
-        color: #ffffff !important;
-    }
-    .logo {
-        background: var(--accent-colour) !important;
-        padding: 5px;
-        border-radius: 200px;
+    .mat-form-field-label, .mat-hint, .mat-typography h1, .mat-typography h2, .mat-typography h3, .site-name, .detail-cell {
+        color: #fff !important;
     }
     body,
     html,
     .container,
     .wrapper,
     .copy-right,
-    .footer {
+    .footer, mat-drawer-content {
         color: #bababa!important;
         border: 0;
         background-color: #000!important;
