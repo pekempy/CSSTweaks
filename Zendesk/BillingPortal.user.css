@@ -9,7 +9,7 @@
 @var    color   accent-transp   "Accent transparency"   #00a69933
 ==/UserStyle== */
 
-@-moz-document regexp('https://ms.paymentsense.com/.*') {
+@-moz-document regexp('https://billingportal.paymentsense.com/.*') {
     .header,
     .header-inner,
     .body-content {
