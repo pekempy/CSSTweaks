@@ -2,7 +2,7 @@
 @name         Dojo Mothership
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/DojoMS.user.css
-@version      0.0.2
+@version      0.0.1
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -52,7 +52,7 @@ regexp('https://hub.paymentsense.com/.*') {
     .mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
         background-color: var(--accent-transp) !important;;
     }
-    .mat-button-toggle-checked {
+    .mat-button-toggle-checked, .mat-pseudo-checkbox-checked, .users-container .mat-list-item.selected, .permissions-content .selected {
         background-color: var(--accent-colour) !important;
     }
     .mat-button-toggle-appearance-standard {
@@ -61,10 +61,10 @@ regexp('https://hub.paymentsense.com/.*') {
     .mat-flat-button.mat-primary, .mat-raised-button.mat-primary {
         background-color: var(--accent-colour) !important;
     }
-    .tertiary-link, a {
+    .tertiary-link, a, .mat-accent {
         color: var(--accent-colour) !important;
     }
-    .mat-form-field-label, .mat-hint, .mat-typography h1, .mat-typography h2, .mat-typography h3, .site-name, .detail-cell {
+    .mat-form-field-label, .mat-hint, .mat-typography h1, .mat-typography h2, .mat-typography h3, .site-name, .detail-cell, .mat-list-item-content, mat-pseudo-checkbox {
         color: #fff !important;
     }
     body,
