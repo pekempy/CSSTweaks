@@ -2,7 +2,7 @@
 @name         Nice InContact
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/Nice.user.css
-@version      0.0.2
+@version      0.0.3
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -14,9 +14,10 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
     */
         
-        .agent-state-ui[data-state="Unavailable"], .btn-group.headerMenu.dropdown, .launcher-popover  {
+        .agent-state-ui[data-state="Unavailable"], .btn-group.headerMenu.dropdown, .launcher-popover, .dashboard .deleteBtn, .dashboard .createNewBtn  {
             background: var(--accent-colour) !important;
             background-color: var(--accent-colour) !important;
+            border-bottom: none !important;
         }
         .agent-state-ui .state-list li:hover,.agent-state-ui .state-list li:focus {
             background-color: var(--accent-colour);
@@ -49,6 +50,7 @@
     .dashViewDiv, .widgetHeader, .slick-header .ui-state-default, button, .agent-leg-ui, #activityBarSection {
         background: var(--accent-transp) !important;
         background-color: var(--accent-transp) !important;
+            border-bottom: none !important;
     }
     .ui-state-default, .dashboard .gridEvenRow.ui-widget-content,.dashboard .realTimeGridOddRow.ui-widget-content, #uimanager_container .ui-manager .glance, #activityBarSection .queue-count-container {
         background: #0000;
