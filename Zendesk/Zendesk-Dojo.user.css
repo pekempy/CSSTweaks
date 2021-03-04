@@ -27,6 +27,11 @@
 	address, body, button, h1, h2, h3, h4, h5, h6, input, label, select, textarea {
 		font-family: 'DM Sans', sans-serif!important;
 	}
+	li[data-garden-id="dropdowns.media_item"]:hover,
+	li[data-garden-id="dropdowns.item"]:hover,
+	li[data-garden-id="dropdowns.next_item"]:hover{
+		background-color: var(--accent-transp) !important;
+	}
 	#main_navigation .toolbar_link.active-product-link {
 		background-color: var(--accent-colour)!important;
 	}
@@ -85,7 +90,8 @@
 	tr:hover {
 		background-color: #3f3f40!important;
 	}
-	tr>td, tr>td>a>span {
+	tr>td, tr>td>a>span, 
+	input[data-garden-id="dropdowns.input"] {
 		color: #bababa!important;
 	}
 	tr:not(tr[class*=LR]) {
