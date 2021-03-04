@@ -2,7 +2,7 @@
 @name         PS App
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/PS-App.user.css
-@version      0.0.1
+@version      0.0.3
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -13,7 +13,7 @@
 ps-guest-header, .mat-toolbar {
         background-color: var(--accent-colour) !important;
     }
-    .mat-card, mat-header {
+    .mat-card, mat-header, .mat-subheading-1  {
         background-color: var(--accent-transp) !important;
         color: #cacaca !important;
     }
