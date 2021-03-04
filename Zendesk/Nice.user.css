@@ -2,7 +2,7 @@
 @name         Nice InContact
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/Nice.user.css
-@version      0.0.5
+@version      0.0.6
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -13,9 +13,18 @@ regexp('https://max.niceincontact.com/.*') {
     /*
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
     */
-    .agent-state-ui[data-state="Available"] .state-bar, .agent-state-ui .state-list li[data-state="Available"]:hover {
+    .agent-state-ui[data-state="Available"] .state-bar,
+    .agent-state-ui .state-list li[data-state="Available"]:hover,
+    .popover-panel .clickthrough-container .clickthrough-header {
         color: #fff !important;
         background-color: var(--accent-colour);
+    }
+    .toolbar-ui .popover-panel .toolbar-popover-list-template:hover,
+    .toolbar-ui .popover-panel .toolbar-popover-list-template.hover,
+    .toolbar-ui .popover-panel .toolbar-popover-list-template:focus,
+    .personal-queue-ui .call-history-container .call-history-item-list[data-can-redial="true"] li:hover {
+        background: var(--accent-transp) !important;
+        background-color: var(--accent-transp) !important;
     }
     .agent-state-ui[data-state="Unavailable"],
     .btn-group.headerMenu.dropdown,
@@ -45,7 +54,12 @@ regexp('https://max.niceincontact.com/.*') {
     .link-header,
     .module-name,
     .link-name,
-    .session-connect-section .session-connect-ui .set-station-container {
+    .session-connect-section .session-connect-ui .set-station-container,
+    .contact-info,
+    button[class="mute"],
+    button[class="hold"],
+    button[class="mask"],
+    button[class="record"] {
         background: #0000 !important;
         background-color: #272727 !important;
         border-radius: 5px;
@@ -68,7 +82,10 @@ regexp('https://max.niceincontact.com/.*') {
     h5,
     h6,
     .radio-label,
-    .radio-label svg {
+    .radio-label svg,
+    .title-row,
+    .event-timestamp,
+    .event-body {
         color: #fff !important;
         fill: #fff !important;
     }
@@ -117,7 +134,11 @@ regexp('https://max.niceincontact.com/.*') {
     .marketing-width {
         width: 0 !important;
     }
-
+    .popover-panel,
+    .redial-panel {
+        border: 4px solid var(--accent-colour) !important;
+        background-color: #2d2c2c;
+    }
     body,
     html,
     .container,
