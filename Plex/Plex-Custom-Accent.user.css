@@ -2,12 +2,12 @@
 @name Plex custom accent colour
 @namespace github.com/pekempy/CSSTweaks
 @updateURL https://raw.githubusercontent.com/pekempy/CSSTweaks/main/Plex-Custom-Accent.user.css
-@version 0.0.1
+@version 0.0.2
 @license GPL v3
 @author Pekempy
 ==/UserStyle== */
 
-@-moz-document domain("app.plex.tv"), regexp(".*:32400/.*") {
+@-moz-document domain("app.plex.tv"), regexp("*:32400/*") {
 	@import url(https://fonts.googleapis.com/css2?family=Montserrat);
 	/* Changing the "--accent-colour" here willlet you choose the accent colour used almost everywhere in Plex Web UI If you choose too bright of colour, you will miss some labels :( */
 	:root {
@@ -184,5 +184,11 @@
 	div[class*=SourceSidebar-openSidebar-],
 	div[class*=SourceSidebarLink-title-] {
 		font-family: 'Monsterrat', sans-serif
+	}
+	.modal-lg>.modal-dialog {width: 75vw;}
+	.modal-body-scroll {max-height: 75vh;}
+	.modal-body-with-panes .modal-body-pane {height: 75vh;}
+	textarea[name="summary"] {
+		min-height: 250px;
 	}
 }
