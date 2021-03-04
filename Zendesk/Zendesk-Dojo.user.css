@@ -211,6 +211,9 @@
 	.jGrowl-notification, .main_panes.reporting .stat-set, .modal, .modal-footer {
 		border: 0!important;
 	}
+	.ember-view .dropdown-menu {
+		background-color: #333 !important;
+	}
 	#admin_content .overview h3, .activities .description strong, .event:not(.is-public) .comment, .index__c-menu__item___36mO8:not(.index__c-menu__item--add___3d3og), .zd-comment.zd-comment-pre-styled div, div.LRdb.LRmv.LRlk.LRli, div.LRnc.LRnd.LRne.LRna {
 		color: #cdcdcd!important;
 	}
