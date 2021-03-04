@@ -2,7 +2,7 @@
 @name         Nice InContact
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/Nice.user.css
-@version      0.0.4
+@version      0.0.5
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -13,6 +13,10 @@ regexp('https://max.niceincontact.com/.*') {
     /*
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)!important;
     */
+    .agent-state-ui[data-state="Available"] .state-bar, .agent-state-ui .state-list li[data-state="Available"]:hover {
+        color: #fff !important;
+        background-color: var(--accent-colour);
+    }
     .agent-state-ui[data-state="Unavailable"],
     .btn-group.headerMenu.dropdown,
     .launcher-popover,
