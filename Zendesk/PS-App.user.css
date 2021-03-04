@@ -2,7 +2,7 @@
 @name         PS App
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/PS-App.user.css
-@version      0.0.5
+@version      0.0.6
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -21,6 +21,9 @@
     }
     button > mat-icon > svg {
         color: #fff !important;
+    }
+    .banner {
+        background-color: var(--accent-transp) !important;   
     }
     .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
         color: var(--accent-transp);
