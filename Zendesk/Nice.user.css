@@ -2,7 +2,7 @@
 @name         Nice InContact
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/Nice.user.css
-@version      0.0.7
+@version      0.0.8
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -164,7 +164,20 @@ regexp('https://max.niceincontact.com/.*') {
         border-radius: 10px;
         box-shadow: inset 0 0 5px #000;
     }
-
+	
+	.dashboard .ViewBtn, 
+	.dashboard .refreshViewBtn, 
+	.dashboard .editBtn, 
+	.dashboard .consoleViewBtn {
+		background-color: var(--accent-colour);
+		border-color: var(--accent-colour);
+		color: #fff;
+	}
+	
+	.interval {
+		color: #000 !important;
+	}
+	
     body .header-navigation .logo-bar {
         background: var(--accent-colour)!important;
         background-color: var(--accent-colour)!important;
