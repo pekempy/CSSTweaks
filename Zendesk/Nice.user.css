@@ -2,7 +2,7 @@
 @name         Nice InContact
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https: //github.com/pekempy/CSSTweaks/raw/main/Zendesk/Nice.user.css
-@version      0.0.8
+@version      0.0.9
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -38,10 +38,39 @@ regexp('https://max.niceincontact.com/.*') {
         background-color: var(--accent-transp)!important;
         border-bottom: none!important;
     }
-
+	body .menu-body .list-body .content-list .content-left .GridViewMainDiv .GridSearchBar, body .menu-body .list-body .content-list .content-right .GridViewMainDiv .GridSearchBar,
+	.ulGridNav{
+		background: var(--accent-colour) !important;
+			color: #fff !important;
+	}
+	.IndicatorPanel, tbody .headerRow {
+		background-color: var(--accent-transp);	
+	}
     .dialog-title {
         color: #000!important;
     }
+	.gridAlternatingRowWithHoverClass:nth-child(even) { 
+		background-color: #313131;
+	}
+	.gridAlternatingRowWithHoverClass:nth-child(odd) { 
+		background-color: #5c5c5c;
+	}
+	.gridAlternatingRowwithHoverclass:nth-child(even):hover,.gridAlternatingRowwithHoverclass:nth-child(odd):hover{
+		background-color: var(--accent-transp) !important;
+	}
+	table, .Label, .cssGrid, .GridFooter, .GridFooter .label,
+	body .menu-body .list-body .content-list .content-left .GridViewMainDiv .GridContainerNoScroll, .GridViewMainDiv {
+		background: #313131 !important;
+		background-color: #313131 !important;
+		color: #fff !important;
+	}
+	tr:nth-child(odd) {
+		background: #4b4b4b !important;
+		color: #fff !important;
+	}
+	.form_label, .form_details {
+		color: #fff !important;
+	}
 
     .launcher-popover .app-link:hover {
         background-color: #3636363d;
@@ -50,7 +79,11 @@ regexp('https://max.niceincontact.com/.*') {
     .launcher-popover .arrow:first-of-type:after {
         border-bottom-color: var(--accent-colour)!important;
     }
-
+	
+	.ajax__tab_xp .ajax__tab_body, .MediaSelection, .PlayPanel{ 
+		background-color: #fff0 !important;
+			border: none !important;
+	}
     .loginwithuserpwd,
     form label,
     body .wrapper-login .widget-container .widget_body .title,
