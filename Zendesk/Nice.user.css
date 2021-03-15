@@ -27,6 +27,12 @@ regexp('https://max.niceincontact.com/.*') {
         background-color: var(--accent-colour)!important;
         border-bottom: none!important;
     }
+	.secondary-inline-button button, input, select {
+		background-color: var(--accent-transp) !important;
+		color: #fff !important;
+		border-color: var(--accent-colour) !important;
+		border-bottom: 1px !important;
+	}
 
     .dashViewDiv,
     .widgetHeader,
@@ -59,7 +65,7 @@ regexp('https://max.niceincontact.com/.*') {
 		background-color: var(--accent-transp) !important;
 	}
 	table, .Label, .cssGrid, .GridFooter, .GridFooter .label,
-	body .menu-body .list-body .content-list .content-left .GridViewMainDiv .GridContainerNoScroll, .GridViewMainDiv {
+	body .menu-body .list-body .content-list .content-left .GridViewMainDiv .GridContainerNoScroll, .GridViewMainDiv, body .menu-body .list-body .content-list,.updatePnlTitle, body .content-left .navigation-header, .form-title, body .content-left .details-container .ajax__tab_container .ajax__tab_body div .detail-content .detail-section .content-section .content .content-field .literal, .label {
 		background: #313131 !important;
 		background-color: #313131 !important;
 		color: #fff !important;
@@ -68,7 +74,7 @@ regexp('https://max.niceincontact.com/.*') {
 		background: #4b4b4b !important;
 		color: #fff !important;
 	}
-	.form_label, .form_details {
+	.form_label, .form_details, .sm_label, .content-field-user-detail .label_wrapped, .literal {
 		color: #fff !important;
 	}
 
