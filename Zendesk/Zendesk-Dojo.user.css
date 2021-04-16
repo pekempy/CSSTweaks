@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.14
+@version      0.1.15
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -17,12 +17,12 @@
 @-moz-document regexp('.*zendesk.com\\/agent\\/.*') {
 	/* Zendesk Dark Dojo */
 	/* THIS SECTION HIDES UNUSED VIEWS - MODIFY AS REQUIRED */
-	li a[href='/agent/filters/360014268040'], 
-	li a[href='/agent/filters/360013353720'], 
-	li a[href='/agent/filters/360015032359'], 
-	li a[href='/agent/filters/360025690320'], 
-	li a[href='/agent/filters/360059269180'], 
-	li a[href='/agent/filters/suspended'] {
+	a[href='/agent/filters/360014268040'], 
+	a[href='/agent/filters/360013353720'], 
+	a[href='/agent/filters/360015032359'], 
+	a[href='/agent/filters/360025690320'], 
+	a[href='/agent/filters/360059269180'], 
+	a[href='/agent/filters/suspended'] {
 		display: none !important;
 	}
 	.filters>.pane.left ul.filters li, .user_filters>.pane.left ul.filters li, .user>.pane.left ul.filters li {
