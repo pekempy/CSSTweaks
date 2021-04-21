@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.16
+@version      0.1.17
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -36,6 +36,12 @@
 	li[data-garden-id="dropdowns.item"]:hover,
 	li[data-garden-id="dropdowns.next_item"]:hover{
 		background-color: var(--accent-transp) !important;
+	}
+	a {
+		color: var(--accent-colour)!important;
+	}
+	a:hover {
+		color: var(--accent-transp)!important;
 	}
 	#main_navigation .toolbar_link.active-product-link {
 		background-color: var(--accent-colour)!important;
@@ -181,7 +187,7 @@
 	.btn::after, .highcharts-container, .macro-preview__preview-icon, .macro-selector .zd-combo-selectmenu.zd-state-open:before, .macro-selector .zd-icon-arrow-right {
 		filter: invert(88%)!important;
 	}
-	.LRb, .LRd, .LRer, .LRfl>svg, .LRgu, .LRir, .LRjc, .LRno h3, .LRny, .LRof, .c-btn, .customer_context, .dashboard-container, .dashboard-container .overview .overview-cell.basic-overview-cell .name, .dashboard-container .overview .overview-cell:first-child .name, .dashboard-container .section, .ember-view, .ember-view a, .filters>.pane.left ul.filters li.legacy-styling .count, .footer .object_options .dropdown-toggle, .macro-selector .zd-menu-item>a, .main_panes.reporting .benchmark.legend-container .legend, .main_panes.reporting .sub-nav, .main_panes.reporting.bordered .pane.section, .main_panes.reporting.bordered .widget, .main_panes>.pane.left, .mast, .merge-holder .merge_window, .merge-holder .merge_window .option .border, .modal, .property_box, .section.ticket, .ticket .ticket-resolution-footer, .user>.pane.left ul.filters li.legacy-styling .count, .user_filters>.pane.left ul.filters li.legacy-styling .count, .workspace.apps:not(.ticket_editor_app) header, .workspace>.pane.left, .zendesk-editor--plaintext-box .zendesk-editor--plain-text-comment, .zendesk-editor--rich-text-comment, .zendesk-editor--toolbar, div.LRmk.LRml.LRmm.LRmf.LRdb.LRx.LRev h3, footer .object_options .dropdown-toggle, section.filters .left header h1, section.filters .right header h1, section.incidents .left header h1, section.incidents .right header h1, section.user_filters .left header h1, section.user_filters .right header h1 {
+	.LRb, .LRd, .LRer, .LRfl>svg, .LRgu, .LRir, .LRjc, .LRno h3, .LRny, .LRof, .c-btn, .customer_context, .dashboard-container, .dashboard-container .overview .overview-cell.basic-overview-cell .name, .dashboard-container .overview .overview-cell:first-child .name, .dashboard-container .section, .ember-view, .filters>.pane.left ul.filters li.legacy-styling .count, .footer .object_options .dropdown-toggle, .macro-selector .zd-menu-item>a, .main_panes.reporting .benchmark.legend-container .legend, .main_panes.reporting .sub-nav, .main_panes.reporting.bordered .pane.section, .main_panes.reporting.bordered .widget, .main_panes>.pane.left, .mast, .merge-holder .merge_window, .merge-holder .merge_window .option .border, .modal, .property_box, .section.ticket, .ticket .ticket-resolution-footer, .user>.pane.left ul.filters li.legacy-styling .count, .user_filters>.pane.left ul.filters li.legacy-styling .count, .workspace.apps:not(.ticket_editor_app) header, .workspace>.pane.left, .zendesk-editor--plaintext-box .zendesk-editor--plain-text-comment, .zendesk-editor--rich-text-comment, .zendesk-editor--toolbar, div.LRmk.LRml.LRmm.LRmf.LRdb.LRx.LRev h3, footer .object_options .dropdown-toggle, section.filters .left header h1, section.filters .right header h1, section.incidents .left header h1, section.incidents .right header h1, section.user_filters .left header h1, section.user_filters .right header h1 {
 		color: #bababa!important;
 		border: 0;
 		background: 0 0!important;
