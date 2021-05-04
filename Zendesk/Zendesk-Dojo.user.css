@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.17
+@version      0.1.19
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -69,6 +69,9 @@
 	}
 	.sla-policy-metric-action-label.counting.not-breached, .ticket_sla_label.counting.not-breached {
 		background-color: var(--accent-colour)!important;
+	}
+	h1[dir="auto"] {
+		color: #fff !important;
 	}
 	.LRjs, .section.ticket .tab-controls-container, body, html {
 		color: #bababa!important;
