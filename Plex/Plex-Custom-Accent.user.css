@@ -106,8 +106,10 @@
 	a[class*=PosterCardLink-hoveredLink-] {
 		background-color: rgba(30, 30, 30, .6);
 		box-shadow: 0 0 0 1px var(--accent-colour), 0 0 4px rgba(0, 0, 0, .1);
-        border-radius: 50000px;
 	}
+    a[class*=PrePlayCastLink-link] {
+        border-radius: 5000px;
+    }
 	.edit-lock-addon.locked {
 		background-color: var(--accent-colour);
 		border-color: var(--accent-colour)
