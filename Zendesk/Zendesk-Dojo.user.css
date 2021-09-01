@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.19
+@version      0.1.20
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -61,6 +61,21 @@
 	.channel, .filters>.pane.left ul.filters li.deleted_tickets a, .filters>.pane.left ul.filters li.legacy-styling.deleted_tickets .count, a[class='ember-view change_requester_email'], input[data-test-id=ticket-pane-subject], span[class=name]>a, .page__heading {
 		color: var(--accent-colour)!important;
 	}
+	.kddqEG,.kEoEBg { 
+		color: #fff;
+	}
+	.kddqEG:hover,.kEoEBg:hover { 
+		background-color: var(--accent-transp);
+		color: #fff;
+	}
+	.lcagUl {
+		background-color: var(--accent-transp);
+		color: #fff;
+	}
+	.lcagUl:hover {
+		background-color: var(--accent-transp);
+		color: #fff;
+	}
 	.navigation-item.active {
 		border-bottom: 3px solid var(--accent-colour)!important;
 	}
@@ -69,9 +84,6 @@
 	}
 	.sla-policy-metric-action-label.counting.not-breached, .ticket_sla_label.counting.not-breached {
 		background-color: var(--accent-colour)!important;
-	}
-	h1[dir="auto"] {
-		color: #fff !important;
 	}
 	.LRjs, .section.ticket .tab-controls-container, body, html {
 		color: #bababa!important;
@@ -96,6 +108,10 @@
 		box-shadow: none!important;
 		;
 	}
+	tbody > tr > th > p {
+		background-color: #3f3f40;
+		color: #fff !important;
+	}
 	tr:hover {
 		background-color: #3f3f40!important;
 	}
@@ -103,12 +119,7 @@
 	input[data-garden-id="dropdowns.input"] {
 		color: #bababa!important;
 	}
-	tr:not(tr[class*=LR]) {
-		color: #fff!important;
-		border-color: var(--accent-colour)!important;
-		background-color: var(--accent-transp)!important;
-		;
-	}
+
     span, .event .comment .zd-comment.zd-comment-pre-styled span {
         background: #0000 !important;
     }
@@ -199,9 +210,7 @@
 	.main_panes.reporting .statsTable tbody tr:nth-child(even), .modal-body, .modal-footer, .modal-header {
 		background: #252526;
 	}
-	.LRjj, .main_panes.reporting .stat-set.selected {
-		background: #333!important;
-	}
+
 	.event .comment {
 		padding: 10px;
 		border-width: 2px!important;
@@ -259,5 +268,12 @@
     }
 	ul[style*="color: rgb("], span[style*="color: rgb("] {
 		color: #fff !important;
+	}
+	
+	a[href="/agent/filters/360076718219"] {
+		border-color: var(--accent-colour) !important;
+	}
+	.cnpcrh {
+		background-color: var(--accent-ansp) !important;
 	}
 }
