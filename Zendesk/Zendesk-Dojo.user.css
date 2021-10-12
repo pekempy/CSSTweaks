@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.1.20
+@version      0.2.0
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -119,7 +119,9 @@
 	input[data-garden-id="dropdowns.input"] {
 		color: #bababa!important;
 	}
-
+	.zd-comment * { 
+	color: #fff;
+	}
     span, .event .comment .zd-comment.zd-comment-pre-styled span {
         background: #0000 !important;
     }
@@ -275,5 +277,16 @@
 	}
 	.cnpcrh {
 		background-color: var(--accent-ansp) !important;
+	}
+	code {
+		background: #333 !important;
+		color: var(--accent-colour) !important;
+		border-color: var(--accent-colour) !important;
+	}
+	.link_light {
+		color: var(--accent-colour) !important;
+	}
+	.zd-comment * >a {
+		color: var(--accent-colour) !important;
 	}
 }
