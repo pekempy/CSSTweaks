@@ -2,7 +2,7 @@
 @name         Zendesk Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/Zendesk-Dojo.user.css
-@version      0.2.0
+@version      0.2.1
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -286,7 +286,7 @@
 	.link_light {
 		color: var(--accent-colour) !important;
 	}
-	.zd-comment * >a {
+	.zd-comment * > a, .zd-comment a {
 		color: var(--accent-colour) !important;
 	}
 }
