@@ -1,0 +1,83 @@
+/* ==UserStyle==
+@name         JIRA Dojo
+@namespace    github.com/pekempy/CSSTweaks
+@updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/JIRA-Dojo.user.css
+@version      0.0.1
+@license      GPL v3
+@author       Pekempy
+@var    color   accent-colour   "Accent colour"     #00a699
+@var    color   accent-transp   "Accent transparency"   #00a69933
+@var    color   open-colour     "Open ticket tag colour"    #00a699
+@var    color   pending-colour  "Pending ticket tag colour"     #00625a
+@var    color   hold-colour  "Hold ticket tag colour"     #6c7a79
+@var    color   solved-colour   "Solved ticket tag colour"  #a7a7a7
+@var    color   new-colour   "New ticket tag colour"  #dbdbdb
+==/UserStyle== */
+
+header, div[class*="aaof7z"], div[data-testid="overflow-menu-popup"], div[data-testid="menu-group-loaded"] {
+	background-color: #2b2b2b !important;
+}
+button {
+	background-color: #0000 !important;
+}
+span[role="img"] {
+	color: var(--accent-colour)!important;
+}
+h1, h2, h3, h4, h5, .css-pjv25p.css-pjv25p[data-selected], .css-pjv25p {
+	color: #fff !important;
+}
+.css-xmgubd:hover {
+	background-color: #0000 !important;
+}
+body, #ak-main-content, .css-14gi8oh *, .piztau-2 * {
+	background-color: #373737 !important;
+	color: #fff !important;
+}
+p { color: #fff !important; }
+.koqsub, .css-182g027, .css-ljvyqu, .css-zaxvqe, a[class*="css-1a"], div[class*="css-123"], input[data-test-id="search-dialog-input"], div[role="group"]  {
+	background-color: #2b2b2b !important;
+	color: #fff;
+}
+ input[data-test-id="search-dialog-input"]  {
+	border-color: var(--accent-colour) !important;
+}
+.css-2mocj4 {
+	color: var(--accent-colour) !important;
+}
+a[class*="kr6"],a[class*="kr6"]:hover  {
+	background-color: var(--accent-colour) !important;
+}
+img[class*="sd-recent-"] {
+	background-color: var(--accent-colour) !important;
+	border-radius: 25px !important;
+	padding: 5px !important; 
+}
+.virtual-table-row, .piztau-2 *{
+	z-index: 0 !important;
+}
+.css-kr6n2m * {
+	color: #fff !important;
+}
+a[class*="css-1a"]:hover, .css-11sqbtf:hover, a[data-testid="menu-people-item"]:hover, a[class*="sc"]:hover, button[class*="css-1a6"]:hover, button[class*="css-1uo"]:hover, button[class*="css-hruel"]:hover {
+	background-color: var(--accent-transp) !important;
+	color: #000 !important;
+}
+.css-1764c62::after {
+	background: none !important;
+}
+.cGdBmr { background-color: #2b2b2b;}
+span {
+	color: #fff;
+}
+
+
+
+/* change logo to DOJO ladz */
+img.css-9fvn9o,
+.css-u3rpaj {
+	width: 0px!important;
+	height: 0px!important;
+	padding: 12px 25px 12px 30px!important;
+	background: url("https://lirp.cdn-website.com/c5c95c8c/dms3rep/multi/opt/Dojo_Logo_Charcoal_CMYK_3600-9b55ea7b-640w.png")!important;
+	background-size: contain !important;
+}
