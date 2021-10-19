@@ -2,7 +2,7 @@
 @name         JIRA Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/JIRA-Dojo.user.css
-@version      0.0.1
+@version      0.0.2
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -13,7 +13,8 @@
 @var    color   solved-colour   "Solved ticket tag colour"  #a7a7a7
 @var    color   new-colour   "New ticket tag colour"  #dbdbdb
 ==/UserStyle== */
-
+@-moz-document regexp('https://paymentsense.atlassian.net/jira/servicedesk/projects/ITH.*');
+	
 header, div[class*="aaof7z"], div[data-testid="overflow-menu-popup"], div[data-testid="menu-group-loaded"] {
 	background-color: #2b2b2b !important;
 }
