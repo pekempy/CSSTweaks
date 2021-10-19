@@ -13,7 +13,7 @@
 @var    color   solved-colour   "Solved ticket tag colour"  #a7a7a7
 @var    color   new-colour   "New ticket tag colour"  #dbdbdb
 ==/UserStyle== */
-@-moz-document regexp('https://paymentsense.atlassian.net/jira/servicedesk/projects/ITH.*');
+@-moz-document regexp('https://paymentsense.atlassian.net/jira/servicedesk/projects/ITH.*') {
 	
 header, div[class*="aaof7z"], div[data-testid="overflow-menu-popup"], div[data-testid="menu-group-loaded"] {
 	background-color: #2b2b2b !important;
@@ -81,4 +81,5 @@ img.css-9fvn9o,
 	padding: 12px 25px 12px 30px!important;
 	background: url("https://lirp.cdn-website.com/c5c95c8c/dms3rep/multi/opt/Dojo_Logo_Charcoal_CMYK_3600-9b55ea7b-640w.png")!important;
 	background-size: contain !important;
+}
 }
