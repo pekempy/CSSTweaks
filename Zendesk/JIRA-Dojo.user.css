@@ -2,7 +2,7 @@
 @name         JIRA Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/JIRA-Dojo.user.css
-@version      0.0.4
+@version      0.0.5
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -14,7 +14,7 @@
 @var    color   new-colour   "New ticket tag colour"  #dbdbdb
 ==/UserStyle== */
 
-@-moz-document regexp('https://paymentsense.atlassian.net/jira/servicedesk/projects/ITH/.*') {
+@-moz-document regexp('https://paymentsense.atlassian.net/jira/servicedesk/projects/ITH/.*'), regexp("https://paymentsense.atlassian.net/browse/ITH-.*") {
 	:root {
 		--background-subtleNeutral-resting: #3369e8;
 		--background-default: #212121;
@@ -150,7 +150,7 @@ span, .hnHxzs * {
 	a[href*="https://paymentsense.atlassian-app.opsgenie"],
 	a[href*="/jira/servicedesk/projects/ITH/on-c"],
 	a[href*="/jira/servicedesk/projects/ITH/knowledge"],
-	a[href*="/jira/servicedesk/projects/ITH/repo"] {
+	a[href*="/jira/servicedesk/projects/ITH/repo"], .css-1cnnrw8 {
 		background-color: #2b2b2b;
 		color: #fff;
 	}
@@ -159,9 +159,33 @@ span, .hnHxzs * {
 	a[href*="https://paymentsense.atlassian-app.opsgenie"]:hover,
 	a[href*="/jira/servicedesk/projects/ITH/on-c"]:hover,
 	a[href*="/jira/servicedesk/projects/ITH/knowledge"]:hover,
-	a[href*="/jira/servicedesk/projects/ITH/repo"]:hover {
-		background-color: var(--accent-transp);
+	a[href*="/jira/servicedesk/projects/ITH/repo"]:hover,
+	.blRnoR.blRnoR [role="menuitem"]:hover,
+	.eJTYOk.eJTYOk:hover,
+	e1bru4yj0 div[role="none"]:hover {
+		background-color: var(--accent-transp) !important;
 	}
+	
+	.css-nipym0 {
+		background-color: #111;
+		border-radius: 10px;
+	}
+	.css-1n7v3ny-option {
+		background-color: var(--accent-colour);
+	}
+	._bfhkaxbu {
+		background-color: var(--accent-colour) !important;
+	}
+	.blRnoR.blRnoR [role="menuitem"],.blRnoR, .hHbhyl {
+		background-color: #212121;
+		color: #fff
+	}
+	.iLKsB, .iLKsB *, .eJTYOk.eJTYOk, 
+	div[data-test-id="search-dialog-dialog-wrapper"] {
+		background-color: #212121;
+		color: #fff;
+	}
+	
  /* change logo to DOJO ladz */
 img.css-9fvn9o,
 .css-u3rpaj {
