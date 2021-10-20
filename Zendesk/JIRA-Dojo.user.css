@@ -2,7 +2,7 @@
 @name         JIRA Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/JIRA-Dojo.user.css
-@version      0.0.3
+@version      0.0.4
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -15,6 +15,10 @@
 ==/UserStyle== */
 
 @-moz-document regexp('https://paymentsense.atlassian.net/jira/servicedesk/projects/ITH/.*') {
+	:root {
+		--background-subtleNeutral-resting: #3369e8;
+		--background-default: #212121;
+	}
 header, div[class*="aaof7z"], div[data-testid="overflow-menu-popup"], div[data-testid="menu-group-loaded"] {
 	background-color: #2b2b2b !important;
 			color: #bababa!important;
@@ -98,8 +102,8 @@ span, .hnHxzs * {
 		background-color: var(--accent-transp);
 		color: #fff;
 	}
-	.dZXbBU:hover {
-		background-color: var(--accent-colour) !important;
+	.dZXbBU:hover, .izWG1W:hover {
+		background-color: #fff0 !important;
 		color: #fff;
 	}
 	.fgmLUp .media-table-row-highlighted, .media-table-row-highlighted:hover {
@@ -130,9 +134,35 @@ span, .hnHxzs * {
 		background: #2f3941;
 	}
 	
-	
-
-/* change logo to DOJO ladz */
+	code * {
+		color: #ffcb73;
+	}
+	.jBZaxs{
+		background-color: var(--accent-colour);
+	}
+	div[data-is-queue-issue-count-badge] span{
+		background-color: #fff;
+		color: #000 !important;
+		font-weight: bold;
+	}
+	a[href*="/jira/servicedesk/projects/ITH/queues"],
+	a[href*="/jira/servicedesk/projects/ITH/section/"],
+	a[href*="https://paymentsense.atlassian-app.opsgenie"],
+	a[href*="/jira/servicedesk/projects/ITH/on-c"],
+	a[href*="/jira/servicedesk/projects/ITH/knowledge"],
+	a[href*="/jira/servicedesk/projects/ITH/repo"] {
+		background-color: #2b2b2b;
+		color: #fff;
+	}
+	a[href*="/jira/servicedesk/projects/ITH/queues"]:hover,
+	a[href*="/jira/servicedesk/projects/ITH/section/"]:hover,
+	a[href*="https://paymentsense.atlassian-app.opsgenie"]:hover,
+	a[href*="/jira/servicedesk/projects/ITH/on-c"]:hover,
+	a[href*="/jira/servicedesk/projects/ITH/knowledge"]:hover,
+	a[href*="/jira/servicedesk/projects/ITH/repo"]:hover {
+		background-color: var(--accent-transp);
+	}
+ /* change logo to DOJO ladz */
 img.css-9fvn9o,
 .css-u3rpaj {
 	width: 0px!important;
