@@ -2,7 +2,7 @@
 @name         JIRA Dojo
 @namespace    github.com/pekempy/CSSTweaks
 @updateURL    https://github.com/pekempy/CSSTweaks/raw/main/Zendesk/JIRA-Dojo.user.css
-@version      0.0.5
+@version      0.0.6
 @license      GPL v3
 @author       Pekempy
 @var    color   accent-colour   "Accent colour"     #00a699
@@ -18,6 +18,7 @@
 	:root {
 		--background-subtleNeutral-resting: #3369e8;
 		--background-default: #212121;
+		--background-overlay: #212121;
 	}
 header, div[class*="aaof7z"], div[data-testid="overflow-menu-popup"], div[data-testid="menu-group-loaded"] {
 	background-color: #2b2b2b !important;
@@ -162,7 +163,11 @@ span, .hnHxzs * {
 	a[href*="/jira/servicedesk/projects/ITH/repo"]:hover,
 	.blRnoR.blRnoR [role="menuitem"]:hover,
 	.eJTYOk.eJTYOk:hover,
-	e1bru4yj0 div[role="none"]:hover {
+	e1bru4yj0 div[role="none"]:hover,
+	.eWlfLR.eWlfLR:hover, 
+	.Oreww,
+	.biqreV.biqreV:hover
+	{
 		background-color: var(--accent-transp) !important;
 	}
 	
