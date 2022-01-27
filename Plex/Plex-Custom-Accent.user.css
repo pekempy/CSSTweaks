@@ -1,196 +1,260 @@
 /* ==UserStyle==
-@name Plex custom accent colour
-@namespace github.com/pekempy/CSSTweaks
-@updateURL https://raw.githubusercontent.com/pekempy/CSSTweaks/main/Plex-Custom-Accent.user.css
-@version 0.0.2
-@license GPL v3
-@author Pekempy
+@name           Drive Dark
+@author         Pete Kemp
+@namespace      github.com/pekempy/CSSTweaks
+@updateURL      https://raw.githubusercontent.com/pekempy/CSSTweaks/main/Google/Drive_and_Docs.user.css
+@description    Google Docs/Drive dark mode
+@version        0.1.4
+@license        GPL v3
 ==/UserStyle== */
-
-@-moz-document domain("app.plex.tv"), regexp("*:32400/*") {
-	@import url(https://fonts.googleapis.com/css2?family=Montserrat);
-	/* Changing the "--accent-colour" here willlet you choose the accent colour used almost everywhere in Plex Web UI If you choose too bright of colour, you will miss some labels :( */
-	:root {
-		--accent-colour: #31d0f7;
-		--accent-rgb: 49, 208, 247
-	}
-	.artwork-file-container a,
-	.artwork-file-container a:hover,
-	.btn-gray.selected,
-	.cancel-url-btn,
-	.card-announcement a,
-	.conversion-queue-empty-region a,
-	.edit-section-modal .wizard-blocks-group>.wizard-block.selected,
-	.edit-section-modal .wizard-blocks-group>.wizard-block.selected:hover,
-	.help-block a,
-	.nav-pills>li.active>a,
-	.remote-access-upload-form .remote-access-upload-speed-header,
-	.status-conversion-btn,
-	.submit-url-btn,
-	.upload-back-btn,
-	.upload-url-btn,
-	.upload-url-btn:hover,
-	.wizard-block .selected,
-	.wizard-block-selected,
-	a[class*=Link-isSelected-],
-	a[class*=Link-primary-],
-	a[class*=PageHeaderTabButton-isSelected-],
-	button[class*=IconButton-]:hover,
-	button[class*=IconButton-isActive-],
-	button[class*=Link-isSelected-],
-	button[class*=Link-primary-],
-	div[class*=MultiSelectPageHeader-selectedTitle-],
-	div[class*=PageHeaderMultiselectActions-count],
-	div[class*=ServerSettingsServerMenuItem-friendlyName],
-	div[class*=SidebarListLink-selectedIcon-],
-	div[class*=SourceSidebarServerHeader-title-],
-	span[class*=NavBarActivityMenuStatusItem-statusButtonIndicator-],
-	svg[id*=plex-icon-selected] {
-		color: var(--accent-colour)
-	}
-	.badge,
-	.keyboard-shortcuts-keys-key,
-	a[class*=" active"],
-	a[class*=check-for-updates-btn],
-	button[class*=Button-primary],
-	div[class*=MetadataPosterCard-progressBar-],
-	div[class*=PosterCardOverlayProgress-progressBar-],
-	div[class*=SessionTile-playProgressPercent-],
-	div[class*=VolumeSlider-fill-] {
-		background-color: var(--accent-colour)!important
-	}
-	p {
-		margin: 0!important
-	}
-	div[class*=PageHeaderMultiselectActions-container-] {
-		border: 2px solid var(--accent-colour)
-	}
-	button[class*=PosterCardLink-hoveredLink],
-	div[class*=MetadataPosterCardFace-face-]:hover {
-		box-shadow: 0 0 0 1px var(--accent-colour), 0 0 4px rgba(0, 0, 0, .3);
-	}
-	.btn,
-	div[class*=MetadataPosterCard-legacyUnwatchedEpisodesBadge-],
-	div[class*=MetadataPosterCardOverlay-unplayedBadge-] {
-		background-color: var(--accent-colour)!important;
-		color: #fff
-	}
-	div[class*=MultiSelectPageHeader-multiSelectPageHeader-] {
-		box-shadow: 0 2px 0 0 var(--accent-colour)
-	}
-	div[class*=MetadataPosterCard-legacyUnwatchedTag-],
-	div[class*=MetadataPosterCardOverlay-unplayedTag] {
-		position: absolute;
-		top: -14px;
-		right: -14px;
-		width: 28px;
-		height: 28px;
-		background-color: var(--accent-colour);
-		transform: rotate(45deg)
-	}
-	div[class*=SourceSidebarLink-isSelected-] {
-		background-color: rgba(255, 255, 255, .07);
-		box-shadow: inset 4px 0 0 0 var(--accent-colour)!important
-	}
-	button[class*=MetadataPosterCard-hoveredSelectedLink-],
-	button[class*=MetadataPosterCard-selectedLink-],
-	div[class*=MetadataPosterCardFace-isSelected-] {
-		box-shadow: 0 0 0 2px var(--accent-colour), 0 0 4px rgba(0, 0, 0, .3)!important
-	}
-	div[class*=MetadataPosterCardOverlay-selectCircle-],
-	div[class*=SelectButton-isSelected-],
-	div[class*=SelectButton-selectCircle-] {
-		border-color: var(--accent-rgb)!important;
-		background-color: var(--accent-colour)!important
-	}
-	a[class*=PosterCardLink-hoveredLink-] {
-		background-color: rgba(30, 30, 30, .6);
-		box-shadow: 0 0 0 1px var(--accent-colour), 0 0 4px rgba(0, 0, 0, .1);
-	}
-    a[class*=PrePlayCastLink-link] {
-        border-radius: 5000px;
+@-moz-document url-prefix("https://docs.google.com/document/") {
+    .docs-homescreen-empty-section-new-user-notice-heading,
+    .docs-homescreen-empty-section-notice-message {
+        color: #23282f
     }
-	.edit-lock-addon.locked {
-		background-color: var(--accent-colour);
-		border-color: var(--accent-colour)
+    .docs-gm .docs-menubar .goog-control,
+    .docs-gm .docs-menubar .menu-button,
+    .docs-homescreen-grid-item-time-container,
+    .docs-homescreen-grid-item-title,
+    .docs-save-indicator-caption.goog-inline-block,
+    .docs-title-input:focus,
+    .docs-title-save-label,
+    .gb_Ac svg,
+    .gb_Mc .gb_Zd,
+    .gb_Wc .gb_Zd,
+    .gb_Zd.gb_Vc,
+    .gb_pa svg,
+    body {
+        color: silver
+    }
+    .navigation-item,
+    .navigation-widget-empty-content {
+        color: silver!important
+    }
+    span[style*="color:#000000"] {
+        color: #e6e6e6!important
+    }
+    .kix-appview-editor {
+        background: #141920!important
+    }
+    #docs-chrome,
+    #docs-meet-in-editors-entrypointbutton,
+    #docs-meet-in-editors-entrypointbutton:hover,
+    .docs-homescreen-container,
+    .docs-homescreen-grid-item,
+    .docs-material #docs-header .docs-titlebar-buttons,
+    .docs-material #docs-toolbar-wrapper,
+    .docs-title-input,
+    .docsHomescreenUiWizfabbuttonMenuButtonFab,
+    .gb_pa.gb_qa .gb_Fd,
+    .left-sidebar-container,
+    body {
+        background: #23282f
+    }
+    .docs-ui-unprintable.kix-paginateddocumentplugin-compact-mode.kix-paginateddocumentplugin-compact-mode-z-index.kix-paginateddocumentplugin-compact-mode-box-shadow,
+    .gb_pa.gb_Va.gb_Le.gb_Hd.gb_Hc,
+    .gb_pa.gb_Va.gb_Le.gb_Hd.gb_Kd,
+    .kix-page {
+        background: #23282f!important
+    }
+    .app-switcher-button-icon-container,
+    .docs-explore-widget {
+        background: #777
+    }
+    .docs-homescreen-empty-section-notice,
+    .docs-homescreen-floater-header-cell .docsshared-menu-bubble,
+    .docs-homescreen-item-section .docsshared-menu-bubble,
+    .docs-homescreen-owner-filter-button,
+    .docs-icon-arrow-back-dark,
+    .docs-icon-cloud-check,
+    .docs-icon-folder-move,
+    .docs-icon-star-border,
+    .docs-material .goog-toolbar-button,
+    .docs-material .goog-toolbar-combo-button,
+    .docs-material .goog-toolbar-menu-button,
+    .docs-navigation-tab-button-arrow-icon,
+    .docsHomescreenUiWizfabbuttonMenuButtonFab:hover,
+    .docsHomescreenUiWizfabbuttonMenuItemFab,
+    .gb_Ne,
+    .gb_Ne.gb_Oe,
+    .goog-menu,
+    .goog-toolbar-toggle-button.goog-toolbar-button.goog-inline-block.goog-toolbar-button-checked,
+    .gssb_e,
+    .instant-button,
+    .instant-button:hover {
+        background: silver
+    }
+    #docs-toolbar-mode-switcher.edit-mode,
+    .docs-gm .docs-menubar .goog-control:hover,
+    .docs-gm .docs-menubar .menu-button:hover,
+    .docs-homescreen-leftmenu-menuitem.goog-menuitem-highlight,
+    .docs-homescreen-leftmenu-menuitem.goog-menuitem-highlight .docs-homescreen-leftmenu-menuitem-text,
+    .gssb_m {
+        color: #23282f;
+        background: silver
+    }
+    .docs-gm #docs-titlebar-share-client-button .jfk-button,
+    .docs-gm #docs-titlebar-share-client-button .jfk-button:hover,
+    .docs-homescreen-floater-header,
+    .docs-homescreen-grid-header,
+    .docs-homescreen-leftmenu-menuitem-text,
+    .docs-homescreen-leftmenu-tos-link.ogb-link,
+    .docs-homescreen-list-header,
+    .gb_Ac,
+    .goog-menu.goog-menu-vertical.docs-homescreen-leftmenu.docs-homescreen-leftmenu-hidefocusfeedback {
+        color: silver;
+        background: #23282f
+    }
+    .kix-cursor-caret {
+        display: block!important;
+        border-color: #fff!important;
+        box-shadow: 0 0 0 #0091FF00, 0 0 15px #0091FF00, 0 0 50px #0091FF00
+    }
+    .docsshared-menu-bubble {
+        box-shadow: none
+    }
+    .docs-homescreen-list-item,
+    .docs-homescreen-list-item-icon {
+        background: silver;
+        border: 0
+    }
+    .docs-homescreen-list-item.goog-control-hover {
+        color: silver;
+        background: #23282f;
+        border: 0;
+        border-radius: 0;
+        outline: 0
+    }
+    .docs-gm #docs-toolbar-wrapper,
+    .goog-flat-menu-button {
+        border: 0
+    }
+    #navigation-widget-bottom-fade {
+        display: none
+    }
+    .app-switcher-button-icon {
+        fill: #23282f
+    }
+    .docs-companion-app-switcher-container {
+        border-top: 0
+    }
+    .companion-app-switcher-container {
+        background: #23282f;
+        border-left: 0
+    }
+}
+@-moz-document url-prefix("https://drive.google.com/drive/") {
+    .WYuW0e,
+    .XzbSje,
+    .iZz7md,
+    .uFAPIe.qoCZef:not(:disabled) {
+        color: #23282f
+    }
+    .uJtSke.paynGb:not(:disabled) {
+        color: #719ddc
+    }
+    .ZqJeHd.a-c-d.a-r-d,
+    .a-U-J-x,
+    .aabwZd .Tguc8d,
+    .aabwZd .WYuW0e,
+    .aabwZd .WYuW0e .M3pype .YUNZ4c,
+    .aabwZd .WYuW0e .M3pype[data-column-field="6"],
+    .ab-S-Wg,
+    .ab-S-Wg a:link,
+    .ab-S-Wg b,
+    .gb_Ac svg,
+    .gb_Mc .gb_Zd,
+    .gb_Wc .gb_Zd,
+    .gb_pa svg,
+    .h-R-w-d.a-l-S-Pc-w-d,
+    .kc-A,
+    .o-Yc-o-T,
+    .s55KNe .Tguc8d,
+    .ub-ml-Pr .USrqEe-ml-Pr-gi .cr-hTVF2c-r {
+        color: #e6e6e6
+    }
+    .uJtSke.paynGb:hover:not(:disabled) {
+        color: #ff9796
+    }
+    .Kk7lMc-Yb-Il-j,
+    body {
+        background: #23282f
+    }
+    .gb_pa.gb_Va.gb_Le.gb_Hc,
+    .gb_pa.gb_Va.gb_Le.gb_Kd {
+        background: #23282f!important
+    }
+    .Hb-ja-Na .o-Yc-o-T:focus:hover,
+    .a-l-S-Pc-w-d.h-R-w-d-W,
+    .o-Yc-o-T:hover {
+        background: #777
+    }
+    .B-Nd-ZB7aWe-UvFRu,
+    .N7iPof,
+    .Yb-Il-d-c-j,
+    .a-U-ye-ha > .a-U-J,
+    .gb_Ne,
+    .gb_Ne.gb_Oe,
+    .l-u-Ab-zb,
+    .s55KNe .jGNTYb {
+        background: #e6e6e6
+    }
+    .a-ec-Gd .Kzazxf.x6jRSb {
+        color: #23282f;
+        background: #e6e6e6
+    }
+    .XzbSje.w8ecmf.VLrnY {
+        background: #e6e6e6;
+        border: 0
+    }
+    .Yb-Il-d-c {
+        fill: #23282f
+    }
+    .KZ6CTb.a-c-d svg,
+    .a-l-S-Pc-w-d .a-w-d-aa-zd svg,
+    .a-s-fa-Ha-pa {
+        fill: #e6e6e6
+    }
+    
+	div[role="region"]>div>* {
+		background-color: #23282f !important;
+		color: #fff !important;
 	}
-	.media-poster-container.selected {
-		box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--accent-colour)!important
+	div[role="region"]>div {
+		background-color: #23282f !important;
 	}
-	span[class*=NavBarActivityButton-activityIcon-],
-	span[class*=NavBarActivityButton-isHighlighted-] {
-		background-color: var(--accent-colour)!important;
-		color: #000!important
+	header {
+		background-color: #23282f !important;
+		border-bottom: 1px solid black !important;
 	}
-	div[class*=SessionTile-transcodeProgressPercent-] {
-		background-color: rgba(var(--accent-rgb), .5)!important
+	header>* svg {
+		color: #fff;
+		fill: #fff;
 	}
-	svg[class*=PlayButton-playCircle-]:hover {
-		border-color: var(--accent-colour)!important
+	form[id="aso_search_form_anchor"]>button>svg {
+		color: #5f6368 !important;
 	}
-	button[class*=ActionButton-labeledActionButton-] {
-		background-color: var(--accent-colour);
-		color: #fff
-	}
-	.media-poster-container.selected .media-poster {
-		box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 3px var(--accent-colour)
-	}
-	.media-poster-container.selected,
-	.media-poster::before {
-		border-color: var(--accent-colour) var(--accent-colour) transparent transparent!important
-	}
-	.media-poster.selected,
-	.media-poster::after {
-		color: #fff!important
-	}
-	.media-poster:hover {
-		box-shadow: 0 0 4px rgba(0, 0, 0, .3), inset 0 0 0 2px var(--accent-colour)!important
-	}
-	span[class*=DisclosureArrow-isSelected-] {
-		border-color: var(--accent-colour)
-	}
-	button[class*=PlayPauseOverlay-playButton]:hover svg[class*=PlayButton-playCircle],
-	svg[class*=PlayPauseOverlay-playCircle-] {
-		border-color: var(--accent-colour);
-		background-color: var(--accent-colour)
-	}
-	div[class*=SeekBar-seekBarFill-],
-	svg[class*=PlayButton-playCircle-]:hover {
-		background-color: var(--accent-colour)!important
-	}
-	div[class*=SeekBar-seekBarBuffer-] {
-		background-color: rgba(var(--accent-rgb), .5)!important
-	}
-	span[class*=NavBarActivityButton-label-] {
-		color: var(--accent-colour)!important
-	}
-	div[class*=MetadataPosterCardScanStatus-spinner-] {
-		border-color: var(--accent-colour) transparent transparent var(--accent-colour)
-	}
-	div[class*=Page-page] {
-		background-image: url(https://raw.githubusercontent.com/xunil75/Ombi-omBlur/master/blur-noise.png), url(https://raw.githubusercontent.com/xunil75/Ombi-omBlur/master/blur-light.png);
-		background-repeat: repeat, no-repeat;
-		background-attachment: fixed, fixed;
-		background-position: center center, center center;
-		background-size: auto, cover;
-		-webkit-background-size: auto, cover;
-		-moz-background-size: auto, cover;
-		-o-background-size: auto, cover;
-		min-height: 100%;
-		height: auto;
-		background-color: transparent;
-		font-family: 'Montserrat', sans-serif
-	}
-	div[class*=PageHeaderTitle-],
-	div[class*=PrePlay],
-	div[class*=SourceSidebar-openSidebar-],
-	div[class*=SourceSidebarLink-title-] {
-		font-family: 'Monsterrat', sans-serif
-	}
-	.modal-lg>.modal-dialog {width: 75vw;}
-	.modal-body-scroll {max-height: 75vh;}
-	.modal-body-with-panes .modal-body-pane {height: 75vh;}
-	textarea[name="summary"] {
-		min-height: 250px;
-	}
+    form[id="aso_search_form_anchor"] {
+        background-color: #23282f;
+        border: 1px solid #7a7a7a;
+    }
+    input::placeholder {
+        color: #e6e6e6 !important;
+    }
+    .B-Nd-ZB7aWe-UvFRu, .N7iPof, .Yb-Il-d-c-j, .a-U-ye-ha > .a-U-J, .gb_Ne, .gb_Ne.gb_Oe, .l-u-Ab-zb, .s55KNe .jGNTYb {
+        background-color: #3d4653;
+    }
+    .a-U-ye-ha > .a-U-J > .a-U-J-x, .a-Ng-c-ha svg {
+        color: #76a6e8 !important;;
+    }
+    div[role="menu"], .h-v-pc, .h-v-W {
+        background-color: #3d4653;
+    }
+    div[role="menu"] > * {
+        background-color: #3d4653;
+        color: #fff !important;
+    }
+    .a-v-T {
+        color: #fff !important;
+    }
 }
