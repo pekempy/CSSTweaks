@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --md3-primary: 103, 80, 164; /* Change this to pick a different accent colour e.g. "--md3-primary: 82, 148, 255;" for blue */
+  --md3-on-primary: 255, 255, 255;
+  --md3-surface: 28, 27, 31;
+  --md3-surface-container: 39, 39, 44;
+  --md3-on-surface: 230, 224, 233;
+  --md3-outline: 92, 88, 105;
+  --md3-radius: 12px;
+  --md3-font: 'Roboto', sans-serif;
+}
+
+/* body and base styles */
+body {
+  font-family: var(--md3-font);
+  background-color: rgb(var(--md3-surface));
+  color: rgb(var(--md3-on-surface));
+  margin: 0;
+}
+
+/* Card containers */
+.card, .dialog, .paperList, .detailPagePrimaryContainer, .visualCardBox {
+  background-color: rgb(var(--md3-surface-container)) !important;
+  color: rgb(var(--md3-on-surface)) !important;
+  border-radius: var(--md3-radius);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+/* Text buttons */
+.emby-button, .button-flat {
+  background: none !important;
+  color: rgb(var(--md3-primary)) !important;
+  border-radius: var(--md3-radius);
+  font-weight: 500;
+}
+.emby-button:hover, .button-flat:hover {
+  background-color: rgba(var(--md3-primary), 0.08) !important;
+}
+
+/* Filled buttons */
+.raised, .fab {
+  background-color: rgb(var(--md3-primary)) !important;
+  color: rgb(var(--md3-on-primary)) !important;
+  border-radius: var(--md3-radius);
+}
+.raised:hover, .fab:hover {
+  filter: brightness(1.1);
+}
+
+/* Inputs */
+.emby-input, .emby-select-withcolor, .emby-textarea {
+  background-color: rgba(var(--md3-outline), 0.2);
+  color: rgb(var(--md3-on-surface));
+  border: none;
+  border-radius: var(--md3-radius);
+}
+
+/* Header bars */
+.skinHeader, .headerTabs, .headerTop {
+  background-color: rgb(var(--md3-surface-container)) !important;
+  color: rgb(var(--md3-on-surface));
+  border-bottom: 1px solid rgba(var(--md3-outline), 0.3);
+}
+
+/* Navigation menu */
+.navMenuOption {
+  color: rgb(var(--md3-on-surface)) !important;
+  border-radius: var(--md3-radius);
+}
+.navMenuOption:hover, .navMenuOption-selected {
+  background-color: rgba(var(--md3-primary), 0.4) !important;
+  color: rgb(var(--md3-on-primary));
+}
+
+/* Progress */
+progress, .itemProgressBarForeground {
+  background-color: rgb(var(--md3-primary)) !important;
+  border-radius: var(--md3-radius);
+}
+
+/* Slider thumbs */
+.mdl-slider::-webkit-slider-thumb {
+  background-color: rgb(var(--md3-primary));
+  border-radius: var(--md3-radius);
+}
+.mdl-slider-background-lower {
+  background-color: rgb(var(--md3-primary));
+}
+
+/* Overlay background */
+.dialogBackdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Utility panels */
+.toast, .itemSelectionPanel, .listItem, .formDialogHeader, .formDialogFooter {
+  background-color: rgb(var(--md3-surface-container));
+  border-radius: var(--md3-radius);
+  color: rgb(var(--md3-on-surface)) !important;
+}
+
+/* Card layout */
+.cardBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 !important;
+}
+.cardImageContainer {
+  flex: 0 0 60%;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: var(--md3-radius);
+  border-top-right-radius: var(--md3-radius);
+}
+.cardImageContainer img, .cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardContent {
+  flex: 1 1 40%;
+  padding: 0.5em 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardBox-bottompadded {
+  margin-bottom: 0.5em !important;
+}
+[dir=ltr] .itemsContainer>.card.cardBox {
+  margin-right: 0 !important;
+}
+
+/* Hover effects */
+@media (hover: hover) and (pointer: fine) {
+  .paper-icon-button-light:hover:not(:disabled) {
+    color: rgb(var(--md3-primary)) !important;
+    background-color: rgb(var(--md3-primary), 0.2) !important;
+  }
+}
+
+/* Indicators */
+.countIndicator, .fullSyncIndicator, .mediaSourceIndicator, .playedIndicator {
+  background: rgb(var(--md3-primary)) !important;
+}
+
+/* Layout tweaks */
+.itemsContainer { width: 100%; }
+.itemAction.textActionButton {
+  margin-top: 0.25em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+  max-height: 2.4em;
+  white-space: normal;
+}
+.itemAction.textActionButton:hover {
+  color: rgb(var(--md3-primary));
+  text-decoration: none;
+}
+
+/* Detail page layout */
+.detailLogo { display: none !important; }
+.layout-desktop .detailImageContainer .card {
+  top: 0% !important;
+  left: 15% !important;
+  padding-left: 0 !important;
+}
+.layout-desktop .detailSectionContent, .overview {
+  width: auto !important;
+  padding-left: 0% !important;
+}
+.layout-desktop .detailPageContent {
+  padding-left: 23% !important;
+}
+.itemTags { display: none !important; }
+.layout-desktop .itemExternalLinks { position: relative; }
+
+.layout-desktop #childrenCollapsible,
+.layout-desktop #castCollapsible, .layout-desktop #guestCastCollapsible, .layout-desktop #seriesScheduleSection,
+.layout-desktop #specialsCollapsible, .layout-desktop #musicVideosCollapsible, .layout-desktop #scenesCollapsible,
+.layout-desktop #similarCollapsible, .layout-desktop .moreFromSeasonSection {
+  position: relative !important;
+  left: -25% !important;
+  width: 120% !important;
+}
+.itemsContainer > * {
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+}
+.layout-desktop .itemBackdrop { display: none; }
+.layout-desktop .detailPageWrapperContainer { margin-top: 4em; }
+.layout-desktop .mainDetailButtons {
+  margin-top: -5em;
+  padding-left: 50%;
+  scale: 1.25;
+}
+.layout-desktop .detailPagePrimaryContainer {
+  display: block;
+  padding-top: 10em;
+  left: -25em;
+  width: 100vw;
+  background-color: #00000000 !important;
+}
+.layout-desktop .detailImageContainer .card, .layout-desktop .itemTags {
+  scale: 0.5 !important;
+}
+.layout-desktop .detailPagePrimaryContainer .infoWrapper {
+  padding-left: 10%;
+}
+.genres > a,
+.directors > a,
+[data-type="Director"] {
+  text-transform: capitalize;
+}
+.layout-desktop .mainDetailButtons > button {
+  border: 1px solid rgb(var(--md3-primary));
+  padding: 0.25em !important;
+  margin-left: .5em !important;
+  border-radius: 5px !important;
+}
+.layout-desktop .backdropCard>.cardBox {
+  padding-top: 10em !important;
+}
+.layout-desktop #childrenCollapsible {
+  padding-top: 2em !important;
+}
+.layout-desktop .toast,
+.itemSelectionPanel,
+.listItem,
+.formDialogHeader,
+.formDialogFooter {
+  margin-bottom: 0.5em !important;
+}
+.layout-desktop .listItem-border {
+  border-color: #00000000 !important;
+}
+.mdl-spinner__layer-1, .mdl-spinner__layer-2,
+.mdl-spinner__layer-3, .mdl-spinner__layer-4 {
+  border-color: rgb(var(--md3-primary)) !important;
+}
+.layout-mobile .nameContainer, .layout-mobile .itemName.subtitle {
+  align-items: flex-start !important;
+  text-align: start;
+}
+.layout-mobile .itemMiscInfo {
+  align-items: flex-start !important;
+  justify-content: flex-start !important;
+}
+.layout-mobile #itemBackdrop {
+  display: none !important;
+}
+.layout-mobile .detailPagePrimaryContainer {
+  padding-top: 4.25em !important;
+  padding-bottom: 2em;
+}
+.layout-mobile .mainDetailButtons {
+  padding-left: 5em !important;
+}
+.layout-mobile .infoWrapper {
+    top: 1em;
+}
+.layout-mobile .card.portraitCard {
+  top: -10px;
+  bottom: auto;
+}
+.layout-mobile .pageTabContent > .itemsContainer > .card {
+  width: 28%;
+}
+.layout-mobile .section0 > .emby-scroller > .itemsContainer > div {
+  width: 48% !important;
+}
+.layout-mobile .section0 > .emby-scroller > .itemsContainer {
+  flex-wrap: wrap !important; 
+}
+.overview.detail-clamp-text {
+  padding-top: 4em !important;
+}
