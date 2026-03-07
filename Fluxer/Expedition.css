@@ -37,22 +37,25 @@ html,
 [class*="module__markup___"],
 [class*="module__messageContent___"] {
   font-family: 'IBM Plex Sans', sans-serif !important;
-  font-size: 1.1rem !important;
+  font-size: 1.05rem !important;
   font-weight: 400 !important;
-  line-height: 1.4 !important;
+  line-height: 1.2 !important;
   color: #ffffff !important;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 0.5) !important;
 }
 
 .ChannelHeader\.module__channelName___XzkyNm {
   font-family: 'Cinzel', serif !important;
-  font-size: 1.5rem !important;
+  font-size: 1.1rem !important;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .ChannelHeader\.module__topicContainer___XzkyNm {
-  padding-top: 1em;
+  opacity: 0.6 !important;
+}
+.ChannelHeader\.module__topicContainer___XzkyNm > * {
+  font-size: 0.7em !important;
 }
 
 /* 3. CODE SNIPPETS & MONOSPACE */
@@ -550,4 +553,99 @@ pre,
 
 [class*="Nagbar"][class*="module__nagbar___"][class*="module__nagbarDesktop___"][class*="module__nagbarDismissible___"][class*="NativeDragRegion"][class*="module__nativeDragRegion"]:has([class*="NagbarContent"][class*="module__message___"]) {
   display: none;
+}
+[class*="module__repliedTextContent___"] {
+    font-size: 0.8rem !important;
+    line-height: 1 !important;
+    opacity: 0.45; 
+}
+[class*="Divider"][class*="module__text___"] {
+    font-family: 'Cinzel', serif !important;
+    background: #0000 !important;
+}
+[class*="Divider"][class*="module__line___"] {
+    border-color: #a68c674f !important;
+}
+
+/* 13. GOMMAGE: THE CHAOTIC ROSE STORM (HIGH DENSITY & SLOW) */
+
+/* 13.1 THE TRUE ROSE STORM (High Density Image Projection) */
+/* 13. THE CHAOTIC ROSE STORM (Refined Density) */
+
+/* Base Petal Styling */
+#root::before, #root::after {
+    content: "";
+    position: fixed;
+    top: -120px;
+    width: 25px; 
+    height: 25px;
+    background: url('https://fluxerusercontent.com/attachments/1471505767537909829/1479772586600558846/image.png') no-repeat center/contain !important;
+    pointer-events: none;
+    z-index: 1 !important;
+    opacity: 0.7;
+    will-change: transform;
+}
+
+/* Layer 1: Faster, steeper fall */
+#root::before {
+    left: 15%;
+    animation: drift-fast 14s ease-in-out infinite;
+    filter: 
+        drop-shadow(15vw 30vh rgba(212,30,46,0.3)) 
+        drop-shadow(40vw 10vh rgba(255,255,255,0.2))
+        drop-shadow(-10vw 60vh rgba(212,30,46,0.4));
+}
+
+/* Layer 2: Slower, wider drift with a delay */
+#root::after {
+    left: 70%;
+    animation: drift-slow 22s ease-in-out infinite;
+    animation-delay: -7s; /* Starts mid-way so there's no "gap" on refresh */
+    filter: 
+        drop-shadow(-25vw 20vh rgba(212,30,46,0.3)) 
+        drop-shadow(10vw 55vh rgba(212,30,46,0.2))
+        drop-shadow(-45vw 80vh rgba(255,255,255,0.2));
+}
+
+/* FAST ANIMATION: More vertical, slight wobble */
+@keyframes drift-fast {
+    0% { 
+        transform: translateY(-10vh) translateX(0) rotate(0deg); 
+        opacity: 0; 
+    }
+    10% { opacity: 0.7; }
+    /* Small, fluid sways instead of hard direction hits */
+    50% { 
+        transform: translateY(50vh) translateX(3vw) rotate(180deg); 
+    }
+    90% { opacity: 0.7; }
+    100% { 
+        transform: translateY(110vh) translateX(-2vw) rotate(360deg); 
+        opacity: 0; 
+    }
+}
+
+/* SLOW LAYER: Long, sweeping arcs */
+@keyframes drift-slow {
+    0% { 
+        transform: translateY(-10vh) translateX(0) rotate(0deg); 
+        opacity: 0; 
+    }
+    15% { opacity: 0.5; }
+    /* One single smooth curve to the side and back */
+    50% { 
+        transform: translateY(55vh) translateX(-15vw) rotate(-160deg); 
+    }
+    100% { 
+        transform: translateY(115vh) translateX(5vw) rotate(-320deg); 
+        opacity: 0; 
+    }
+}
+
+/* 14. CONTENT FORCEFIELD */
+/* Ensures UI elements stay in front of background flurry */
+[class*="module__messageContent___"], [class*="module__markup___"], [class*="module__messageText___"],
+img, iframe, video, [class*="GifPicker"] {
+    position: relative !important;
+    z-index: 50 !important;
 }
